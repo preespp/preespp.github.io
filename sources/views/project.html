@@ -9,7 +9,7 @@
     <meta name="author" content="Pree Simphliphan">
     <link rel="icon" href="../../bootstrap-3.4.1/docs/pree.jpg">
 
-    <title>Pree's Projects</title>
+    <title>Pree's Class-Personal Projects</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../bootstrap-3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -52,6 +52,7 @@
                 <li><a href="../../">Home</a></li>
                 <li><a href="./about">About</a></li>
                 <li><a href="./experience">Education + Experience</a></li>
+                <li><a href="./award">Awards + Certificates</a></li>
                 <li class="active"><a href="./project">Projects</a></li>
                 <li><a href="./contact">Contact</a></li>
               </ul>
@@ -122,15 +123,55 @@
       <div class="row featurette" id="Inventory">
         <div class="col-md-7">
           <h2 class="featurette-heading">Inventory Optimizer<span class="text-muted"> Mar 2024 - May 2024</span></h2>
-          <li class="lead">Developing a desktop application for <a href="https://github.com/dzokha-true/Inventory_Optimizer">Inventory Management System</a> with database storage and prediction model</li>
-          <li class="lead">Implementing and testing routines to demonstrate the proper passage of data between frontend and backend using Nodejs and Electronjs</li>
-          <li class="lead">Configuring MongoDB, debugging frontend in HTML and JS, and debugging backend in Nodejs and Python</li>
-          <li class="lead">Team Members: Vugar Amirov, Zhakhangir Mamayev, Rawisara Chairat, Cole Shaigec</li>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#inventoryDetails" aria-expanded="false" aria-controls="inventoryDetails">
+              Show/Hide Details
+          </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Dashboard.png" alt="Dashboard Page">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/MongoDBforApp.png" alt="Database for App">
+        <div class="collapse" id="inventoryDetails">
+          <div class="col-md-7">
+              <ul class="lead">
+                <hr class="featurette-divider">
+                  <li>Developing a desktop application for <a href="https://github.com/dzokha-true/Inventory_Optimizer">Inventory Management System (IMS)</a> with database storage and prediction model</li>
+                  <li>Designing, Developing, Testing and Implementing APIs for an Inventory Management System desktop application to enhance functionality, integrate predictive analytics, 
+                    and ensure seamless data flow between frontend and backend components using Nodejs and Electronjs to facilitate real-time data exchange between the IMS and external services, allowing a display of over 10,000 data in a table</li>
+                  <li>Configuring MongoDB to efficiently store and retrieve inventory data, enhancing application performance and scalability</li>
+                  <li>Collaborating with cross-functional teams including Software engineers and Product Managers to define API requirements, ensure compatibility and smooth data passage</li>
+                  <li>Tech Stack: Python, HTML, CSS, JavaScript, Git, Nodejs, Electronjs, MongoDB, API design </li>
+                  <li>Position: Software Engineer, Technical Lead</li> 
+                  <li>Team Members: Vugar Amirov, Rawisara Chairat, Zhakhangir Mamayev, Cole Shaigec</li>
+              </ul>
+          </div>
+      
+          <div class="col-md-5">
+            <hr class="featurette-divider">
+            <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Dashboard.png" alt="Dashboard Page">
+            <hr class="featurette-divider">
+            <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/MongoDBforApp.png" alt="Database for App">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="CPUDesign">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">MIPS Pipeline Processor implementation<span class="text-muted"> Feb 2024 - May 2024</span></h2>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#CPUDetails" aria-expanded="false" aria-controls="CPUDetails">
+              Show/Hide Details
+          </button>
+        </div>
+        <div class="collapse" id="CPUDetails">
+          <div class="col-md-7">
+              <ul class="lead">
+                <hr class="featurette-divider">
+                  <li>Designing and implementing a 5-stage pipelined CPU in HDL, incorporating hazard detection mechanisms to ensure smooth instruction flow and mitigate data hazards</li>
+                  <li>Optimizing ALU operations within the pipeline to enhance overall processor performance and efficiency</li>
+                  <li>Developing a single-cycle pipelined CPU in HDL, gaining proficiency in digital design and processor architecture principles</li>
+                  <li>Tech Stack: Verilog HDL, Vivado, Pipelined CPU, ALU</li>
+                  <li>Position: Computer Hardware Engineer</li> 
+                  <li>Team Members: Rayan Syed</li>
+              </ul>
+          </div>
         </div>
       </div>
 
@@ -139,19 +180,35 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Room Occupancy Monitor<span class="text-muted"> Jan 2024 - May 2024</span></h2>
-          <li class="lead">Developing a device that monitors the number of people entering/ exiting a room and prevent the trepass after reaching maximum occupancy</li>
-          <li class="lead">My part is in Electrical & Computer Engineering: I implemented <a href="https://github.com/preespp/Room-Occupancy-Monitor">software</a> for microcontroller programming and plan the code flowchart for each component.</li>
-          <li class="lead">I also assisted in product assembly, product testing and electrical wiring.</li>
-          <li class="lead">In addition (for the improved product), I improved Internet of Things (IoT) software for the device by using esp32 as wifi module to host the website to check the occupancy online.</li> 
-          <li class="lead">Team Members: Bach Nguyen, Caleb Schwartz, Camellia Mohamed</li>
-          <iframe src="https://docs.google.com/document/d/e/2PACX-1vQWZyZMg1FewzHi46DjVht2dqE7_5Jq6c9aq3tyPF6p_inLLxGLeNcW6LNiGYBP5U6eEqxQp5V-pqhD/pub?embedded=true" width="650" height="340"></iframe>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#roomOccupancyDetails" aria-expanded="false" aria-controls="roomOccupancyDetails">
+            Show/Hide Details
+        </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block img-circle" src="../public/images/Project Photo/RoomBoxPrototype.jpg" alt="room occupancy monitor prototype">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/RoomBox2.png" alt="room occupancy monitor">
-          <hr class="featurette-divider">
-          <iframe src="https://drive.google.com/file/d/1VofR0WLfPCYdPGviKaolLbvq4jVVZYxd/preview" allow="autoplay" width="450" height="225"></iframe>
+        <div class="collapse" id="roomOccupancyDetails">
+          <div class="col-md-7">
+              <ul class="lead">
+                  <hr class="featurette-divider">
+                  <li>Developing a device that monitors the number of people entering/ exiting a room and prevent the trepass after reaching maximum occupancy</li>
+                  <li>My part is in Electrical & Computer Engineering: I implemented <a href="https://github.com/preespp/Room-Occupancy-Monitor">software</a> for microcontroller programming to manage sensor data and control device operations and plan the code flowchart for each component.</li>
+                  <li>I also assisted in the assembly of the room occupancy monitoring device, ensuring adherence to design specifications and quality standards in product assembly</li>
+                  <li>Conducting rigorous product testing to validate performance and functionality under various operating conditions</li>
+                  <li>Contributing to electrical wiring design and implementation, ensuring proper connectivity and functionality of electronic components</li>
+                  <li>In addition (for the improved product), I improved Internet of Things (IoT) software for the device by using ESP32 as WiFi interface</li>
+                  <li>Developing web hosting functionalities to allow remote monitoring of room occupancy status via a dedicated website</li> 
+                  <li>Presenting the prototype and final product to a client</li>
+                  <li>Position: Electrical and Computer Engineer, Test Engineer, Sales Engineer</li>
+                  <li>Tech Stack + Tools: Microcontroller, C++, HTML, CSS, IR sensor, IoT frameworks (ESP32), Software Development (flowcharting), Product Testing, Product Assembly, Electrical Wiring</li>
+                  <li>Team Members: Bach Nguyen, Caleb Schwartz, Camellia Mohamed</li>
+                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQWZyZMg1FewzHi46DjVht2dqE7_5Jq6c9aq3tyPF6p_inLLxGLeNcW6LNiGYBP5U6eEqxQp5V-pqhD/pub?embedded=true" width="600" height="340"></iframe>
+          </div>
+          <div class="col-md-5">
+            <hr class="featurette-divider">
+            <img class="featurette-image img-responsive center-block img-circle" src="../public/images/Project Photo/RoomBoxPrototype.jpg" alt="room occupancy monitor prototype">
+            <hr class="featurette-divider">
+            <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/RoomBox2.png" alt="room occupancy monitor">
+            <hr class="featurette-divider">
+            <iframe src="https://drive.google.com/file/d/1VofR0WLfPCYdPGviKaolLbvq4jVVZYxd/preview" allow="autoplay" width="450" height="225"></iframe>
+          </div>
         </div>
       </div>
 
@@ -159,138 +216,242 @@
 
       <div class="row featurette" id="SmartLamp">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Smart-Lamp<span class="text-muted"> Dec 2023 - Feb 2024</span></h2>
-          <li class="lead">Manufratucing the Smart Lamp that can automatically turn on and adjust its brightness based on distance between users and source; in addition, the color of light can be changed based on room environment (in this project, temperature is considered) to make the users feel comfortable</li>
-          <li class="lead"><a href="https://github.com/preespp/Smart-Lamp">Microcontroller Programming</a> for input sensors and output device using C++ and multithreading algorithms to create the automated system</li>
-          <li class="lead">Designing circuit for running the devices with multiple electronics: LCD, TMP36, NeoPixels and Ultrasonics Sensors</li>
-          <li class="lead">CAD box for containing electronics components and 3D printing the container along with using laser cutting for the lamp shade</li>
+            <h2 class="featurette-heading">Smart-Lamp<span class="text-muted"> Dec 2023 - Feb 2024</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#smartLampDetails" aria-expanded="false" aria-controls="smartLampDetails">
+                Show/Hide Details
+            </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Schematic Diagram.png" alt="SmartLamp2">
-          <hr class="featurette-divider">
-          <video width="425" controls>
-            <source src="../public/images/Project Photo/IMG_5549.MOV" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Whack-a-Mole<span class="text-muted"> Nov 2023 - Dec 2023</span></h2>
-          <li class="lead"><a href="https://github.com/preespp/EC311-Logic-Design-Final-Project">FPGA Programming</a> in Verilog to run Whack-a-mole game on FPGA board (Nexys Artix-7)</li>
-          <li class="lead">Drawing Schematic (Block Diagram for all sub-modules)</li>
-          <li class="lead">Using graphics on VGA: First page, playing page, and ending page by using FSM (Moore Machine).</li>
-          <li class="lead">Implementing a timer (signal feedback control between modules)</li>
-          <li class="lead">Modifying some game logic such as the number of levels and parameters for difficulty inside the game or an option module to play the game without VGA as well.</li>
-          <li class="lead">Team Members: Rawisara Chairat, Arnav Pratap Chaudhry, Vansh Bhati</li>
-        </div>
-        <div class="col-md-5">
-          <video width="425" controls>
-            <source src="../public/images/Project Photo/Whack.mov" type="video/mp4">
-          </video>
+        <div class="collapse" id="smartLampDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Manufacturing the Smart Lamp that can automatically turn on and adjust its brightness based on the distance between users and the light source. Additionally, the color of the light can be changed based on the room environment to make the users feel comfortable</li>
+                    <li><a href="https://github.com/preespp/Smart-Lamp">Microcontroller Programming</a> for input sensors and output devices using C++ and multithreading algorithms to create the automated system</li>
+                    <li>Designing the circuit to run multiple electronics: LCD, TMP36, NeoPixels, and Ultrasonic Sensors</li>
+                    <li>Creating a CAD box for containing electronic components, 3D printing the container, and using laser cutting for the lamp shade</li>
+                    <li>Tech Stack + Tools: Onshape, TinkerCAD, Microcontroller, C++, 3D printing, Laser Cutting, Prodcut Assembly, Product Testing, Electrical Wiring</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Schematic Diagram.png" alt="SmartLamp2">
+                <hr class="featurette-divider">
+                <video width="425" controls>
+                    <source src="../public/images/Project Photo/IMG_5549.MOV" type="video/mp4">
+                </video>
+            </div>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="WhackAMole">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Smart Fan<span class="text-muted"> Oct 2023 - Nov 2023</span></h2>
-          <li class="lead">Awarded third place in BU Hardware Hackathon 2023 track “Bodysync Enchantatron”, engaging the final product with our human body</li>
-          <li class="lead">Manufacturing the smart box that contained a microcontroller to function the box that detects the user's heart rate and turns on the fan if the heart rate is too high to use the fan facilitates in cooling down the user's body and reducing body’s stress</li>
-          <li class="lead">Soldering the circuit to connect microcontroller with heart rate monitor sensor, lcd display and motor</li>
-          <li class="lead">Team Member: Yuxuan (Percy) Chen </li>
+            <h2 class="featurette-heading">Whack-a-Mole FPGA<span class="text-muted"> Nov 2023 - Dec 2023</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#whackAMoleDetails" aria-expanded="false" aria-controls="whackAMoleDetails">
+                Show/Hide Details
+            </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/SmartFan.jpg" alt="smart fan" width="450">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/HackHardware.jpg" alt="result" width="450">
+        <div class="collapse" id="whackAMoleDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Orchestrating the development of a Whack-a-Mole game implemented on the Nexys Artix-7 FPGA board, employing Agile methodologies to enhance project agility and adaptability</li>
+                    <li>Utilized Verilog HDL for <a href="https://github.com/preespp/EC311-Logic-Design-Final-Project">FPGA Programming</a>, optimizing performance and resource utilization for real-time game rendering and control</li>
+                    <li>Designing and documenting the system architecture using a structured methodology, including requirement analysis, system partitioning, and block diagram design</li>
+                    <li>Integrating VGA graphics for first page, playing page, and ending page using FSM (Moore Machine), ensuring seamless transitions and visual clarity</li>
+                    <li>Implementing a 30-second timer module with signal feedback control between modules to manage game duration effectively</li>
+                    <li>Customizing game logic for 3 adjustable difficulty levels and optional non-VGA gameplay mode, enhancing user experience flexibility</li>
+                    <li>Integrating all modules, Deploying and Testing the final product</li>
+                    <li>Position: FPGA Engineer, Project Manager</li>
+                    <li>Tech Stack: Verilog HDL, FPGA, Git, Vivado</li>
+                    <li>Team Members: Rawisara Chairat, Arnav Pratap Chaudhry, Vansh Bhati</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <video width="425" controls>
+                    <source src="../public/images/Project Photo/Whack.mov" type="video/mp4">
+                </video>
+            </div>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="TrussDesignOptimizer">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Truss Design Optimizer<span class="text-muted"> Oct 2023 - Dec 2023</span></h2>
-          <li class="lead">Fabricating the most effective and practical truss in terms of cost spending and maximum weight load</li>
-          <li class="lead">Programming algorithm in MATLAB to test the maximum weight load it can afford and the internal forces for each member of that truss design by receiving the .mat file input for each design</li>
-          <li class="lead">Implementing Linear Algebra and Matrix transformation in programming in order to analyze the joint and section methods and two-force and three-force member theory </li>
-          <li class="lead">Randomizing the matrix by performing automation test in order to find the most optimized design</li>
-          <li class="lead">Performing buckling lab to find the critical forces for each specific length of the material</li>
-          <li class="lead">Team Member: Santiago Henao</li>
+            <h2 class="featurette-heading">Truss Design Optimizer<span class="text-muted"> Oct 2023 - Dec 2023</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#trussDesignDetails" aria-expanded="false" aria-controls="trussDesignDetails">
+                Show/Hide Details
+            </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Truss.jpg" alt="Truss" width="500">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Trussresult.png" alt="Truss" width="500">
+        <div class="collapse" id="trussDesignDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Fabricating the most effective and practical truss in terms of cost spending and maximum weight load</li>
+                    <li>Programming algorithm in MATLAB to test the maximum weight load it can afford and the internal forces for each member of that truss design by receiving the .mat file input for each design</li>
+                    <li>Implementing Linear Algebra and Matrix transformation in programming to analyze the joint and section methods and two-force and three-force member theory</li>
+                    <li>Randomizing the matrix by performing automation tests to find the most optimized design</li>
+                    <li>Performing buckling lab to find the critical forces for each specific length of the material</li>
+                    <li>Position: Mechanical Engineer</li>
+                    <li>Tech Stack + Tools: MATLAB, Mechanical Drawing, Joint Analysis</li>
+                    <li>Team Member: Santiago Henao.</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Truss.jpg" alt="Truss" width="500">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Trussresult.png" alt="Truss Result" width="500">
+            </div>
         </div>
-      </div>
+    </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="SmartFan">
         <div class="col-md-7">
+            <h2 class="featurette-heading">Smart Fan<span class="text-muted"> Oct 2023 - Nov 2023</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#smartFanDetails" aria-expanded="false" aria-controls="smartFanDetails">
+                Show/Hide Details
+            </button>
+        </div>
+        <div class="collapse" id="smartFanDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Awarded third place in BU Hardware Hackathon 2023 track “Bodysync Enchantatron”, engaging the final product with our human body.</li>
+                    <li>Manufacturing the smart box that contains a microcontroller to detect the user's heart rate and turn on the fan if the heart rate is too high, facilitating in cooling down the user's body and reducing stress.</li>
+                    <li>Soldering the circuit to connect the microcontroller with a heart rate monitor sensor, LCD display, and motor.</li>
+                    <li>Position: Project Manager, Computer Engineer.</li>
+                    <li>Team Member: Yuxuan (Percy) Chen.</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/SmartFan.jpg" alt="Smart Fan" width="450">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/HackHardware.jpg" alt="Result" width="450">
+            </div>
+        </div>
+    </div>
+    
+    <hr class="featurette-divider">
+    
+
+    <div class="row featurette" id="RoomTemperatureMonitor">
+      <div class="col-md-7">
           <h2 class="featurette-heading">Room Temperature Monitor<span class="text-muted"> Jan 2023 - May 2023</span></h2>
-          <li class="lead">CAD using Onshape for Product and Battery Holder Design and using TinkerCAD for circuit planning and electrical load test</li>
-          <li class="lead">Wiring and Soldering circuit inside enclosure</li>
-          <li class="lead">Machining the enclosure to attach each component inside the box through each hole based on CAD</li>
-          <li class="lead">Programming in Arduino Uno to operate monitor for indicating room temperature and alerting out-range temperature</li>
-          <li class="lead">Additionally implementing opening song by displaying different frequencies of sound in buzzer</li>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/ProjectTempBox.png" alt="EK131 Project" width="300">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block img-circle" src="../public/images/Project Photo/RealBox.png" alt="physical box ek131" width="300">
-        </div>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#roomTempDetails" aria-expanded="false" aria-controls="roomTempDetails">
+              Show/Hide Details
+          </button>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
+      <div class="collapse" id="roomTempDetails">
+          <div class="col-md-7">
+              <ul class="lead">
+                  <hr class="featurette-divider">
+                  <li>CAD using Onshape for Product and Battery Holder Design and using TinkerCAD for circuit planning and electrical load test.</li>
+                  <li>Wiring and Soldering circuit inside enclosure.</li>
+                  <li>Machining the enclosure to attach each component inside the box through each hole based on CAD.</li>
+                  <li>Programming in Arduino Uno to operate monitor for indicating room temperature and alerting out-range temperature.</li>
+                  <li>Additionally implementing opening song by displaying different frequencies of sound in buzzer.</li>
+                  <li>Tech Stack: Microcontroller, C++, Machining, 3D Printing, Soldering, Mechanical Drawing, Onshape, TinkerCAD</li>
+              </ul>
+          </div>
+          <div class="col-md-5">
+              <hr class="featurette-divider">
+              <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/ProjectTempBox.png" alt="EK131 Project" width="300">
+              <hr class="featurette-divider">
+              <img class="featurette-image img-responsive center-block img-circle" src="../public/images/Project Photo/RealBox.png" alt="physical box ek131" width="300">
+          </div>
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette" id="PopulationSustainabilityAnalysis">
+      <div class="col-md-7">
           <h2 class="featurette-heading">Analysis of the Sustainability of the World's Growing Population<span class="text-muted"> Oct 2022 - Dec 2022</span></h2>
-          <li class="lead">Analyzing data of crop production and population growth to address current sustainability situations</li>
-          <li class="lead">Predicting future trends for each continent until 2025 with raw data over 20,000 datasets during 1990-2022</li>
-          <li class="lead">Performing Statistical Analysis and Machine Learning in MATLAB to create the efficient prediction model</li>
-          <li class="lead">Team Members: Issac Herrick, Darren Figo Sajino</li>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/MATLAB1.png" alt="graph analysis ml" width="350">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/MATLAB2.png" alt="graph analysis" width="350">
-        </div>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#populationDetails" aria-expanded="false" aria-controls="populationDetails">
+              Show/Hide Details
+          </button>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
+      <div class="collapse" id="populationDetails">
+          <div class="col-md-7">
+              <ul class="lead">
+                  <hr class="featurette-divider">
+                  <li>Analyzing data of crop production and population growth to address current sustainability situations.</li>
+                  <li>Predicting future trends for each continent until 2025 with raw data over 20,000 datasets during 1990-2022.</li>
+                  <li>Performing Statistical Analysis and Machine Learning in MATLAB to create the efficient prediction model.</li>
+                  <li>Position: Data Analyst</li>
+                  <li>Tech Stack: MATLAB, Machine Learning, Statistical Analysis</li>
+                  <li>Team Members: Issac Herrick, Darren Figo Sajino.</li>
+              </ul>
+          </div>
+          <div class="col-md-5">
+              <hr class="featurette-divider">
+              <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/MATLAB1.png" alt="graph analysis ml" width="350">
+              <hr class="featurette-divider">
+              <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/MATLAB2.png" alt="graph analysis" width="350">
+          </div>
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette" id="ConnectFourGame">
+      <div class="col-md-7">
           <h2 class="featurette-heading">ConnectFour Game<span class="text-muted"> Oct 2022 - Dec 2022</span></h2>
-          <li class="lead">Programming first version of connecting four game in Python to play on console by inputting the position and display result on terminal</li>
-          <li class="lead">Programming second version of connecting four game in Python to play in the application by migrating the first version game logic to this version and using Pygame library to implement Graphic User Interface (GUI)</li>
-          <li class="lead">Implementing the data passage between GUI and game logic in the backend and ensuring the robustness of the program</li>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Connect4.png" alt="connectfour without GUI" width="300">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Connect4GUI.png" alt="connectfour with GUI" width="300">
-        </div>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#connectFourDetails" aria-expanded="false" aria-controls="connectFourDetails">
+              Show/Hide Details
+          </button>
       </div>
+      <div class="collapse" id="connectFourDetails">
+          <div class="col-md-7">
+              <ul class="lead">
+                  <hr class="featurette-divider">
+                  <li>Programming the first version of Connect Four game in Python to play on console by inputting the position and displaying the result on the terminal.</li>
+                  <li>Programming the second version of Connect Four game in Python to play in the application by migrating the first version game logic to this version and using Pygame library to implement the Graphic User Interface (GUI).</li>
+                  <li>Implementing the data passage between GUI and game logic in the backend and ensuring the robustness of the program.</li>
+                  <li>Tech Stack: Python, Pygame</li>
+              </ul>
+          </div>
+          <div class="col-md-5">
+              <hr class="featurette-divider">
+              <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Connect4.png" alt="connectfour without GUI" width="300">
+              <hr class="featurette-divider">
+              <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/Connect4GUI.png" alt="connectfour with GUI" width="300">
+          </div>
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
 
       <hr class="featurette-divider">
 
-      <!-- <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Project<span class="text-muted"> ??-??</span></h2>
-          <p class="lead">Detail</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
+      <!-- <div class="row featurette" id="ConnectFourGame">
+      <div class="col-md-7">
+          <h2 class="featurette-heading">span class="text-muted"> </span></h2>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="">
+              Show/Hide Details
+          </button>
       </div>
+      <div class="collapse" id="">
+          <div class="col-md-7">
+              <ul class="lead">
+                  <hr class="featurette-divider">
+                  <li></li>
+              </ul>
+          </div>
+          <div class="col-md-5">
+              <hr class="featurette-divider">
+              <img class="featurette-image img-responsive center-block" src="../public/images/Project Photo/" alt="" width="300">
+          </div>
+      </div>
+    </div>
 
       <hr class="featurette-divider"> -->
 
@@ -316,6 +477,8 @@
     <script src="../../bootstrap-3.4.1/docs/assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../bootstrap-3.4.1/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </body>
 </html>
 

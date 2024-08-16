@@ -9,7 +9,7 @@
     <meta name="author" content="Pree Simphliphan">
     <link rel="icon" href="../../bootstrap-3.4.1/docs/pree.jpg">
 
-    <title>Where Pree Learned Engineering</title>
+    <title>Pree's Engineering Career</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../bootstrap-3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -52,6 +52,7 @@
                 <li><a href="../../">Home</a></li>
                 <li><a href="./about">About</a></li>
                 <li class="active"><a href="./experience">Education + Experience</a></li>
+                <li><a href="./award">Awards + Certificates</a></li>
                 <li><a href="./project">Projects</a></li>
                 <li><a href="./contact">Contact</a></li>
               </ul>
@@ -68,7 +69,7 @@
       <hr class="featurette-divider">
       <div>
         <hr class="featurette-divider">
-        <h1 align="center"> Education</h1>
+        <h1 align="center">Education</h1>
       </div>
       <hr class="featurette-divider">
       <!-- Three columns of text below the carousel -->
@@ -76,9 +77,23 @@
         <div class="col-lg-4">
           <img class="img-circle" src="../public/images/Logo for School/bu.jpeg" alt="Generic placeholder image" width="140" height="140">
           <h2>Boston University, College of Engineering</h2>
-          <p>B.S. in Computer Engineering with minor in Mechanical Engineering and concentration in Robotics, class of 2026</p>
+          <p>B.S. in Computer Engineering with minor in Mechanical Engineering, class of 2026</p>
           <p>GPA: 3.97/4.00</p>
           <p>Dean's List Every Semester</p>
+
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Courseworks
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item"><span class="text-muted">AP Credits:</span> Calculus I & II (AP Calculus BC 5), Physics I (AP Physics C: Mechanics 5), Chemistry (AP Chemistry 5)</div>
+                <div class="dropdown-item"><span class="text-muted">Fall 2022:</span> Programming for Engineer (MATLAB + C), Python for Engineers and Data Science, Multivariate, Physics II</div>
+                <div class="dropdown-item"><span class="text-muted">Spring 2023:</span> Computational Linear Algebra, Differential Equations, Engineering Hands-on, Introductory Microeconomics Analysis,</div>
+                <div class="dropdown-item"><span class="text-muted"> Fall 2023:</span> Mechanics (Static), Electric Circuits, Logic Design, Discrete Mathematics for Engineering, Introductory Macroeconomics Analysis</div>
+                <div class="dropdown-item"><span class="text-muted"> Spring 2024:</span> Software Engineering, Computer Organization, Probability Statistics & Data Science for Engineer, Engineering Design</div>
+                <div class="dropdown-item"><span class="text-muted"> Fall 2024:</span> Smart and Connected Systems, Computer Networking, Applied Algorithms for Engineers</div>
+            </div>
+        </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="../public/images/Logo for School/ba.jpeg" alt="Generic placeholder image" width="140" height="140">
@@ -109,94 +124,247 @@
 
       <hr class="featurette-divider">
 
-      <h1 align="center">Experience</h1>
+      <h1 align="center">Engineering Experience</h1>
       <hr class="featurette-divider">
-      <div class="row featurette">
+      <div class="row featurette" id="UndergraduateResearcher">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Undergraduate Researcher<span class="text-muted"> Mar 2024 - Present</span></h2>
-          <li class="lead">I am a researcher in Professor Wenchao Li's Dependable Computing Lab, Boston University College of Engineering.</li>
-          <li class="lead">I implemented Python scripts with ROS Noetic for autonomously controlling Robotics Arm, preparing for embedding machine learning and localization in Robotics Arm.</li>
-          <li class="lead">In addition, with the team, I assisted in Safe and Connected Autonomous Vehicles research project; 
-          testing and developing code in Python with ROS Melodic in path planning and control and feedback algorithm (PID tuning) to function an autonomous robot.</li>
-          <li class="lead">My research area focuses on Robotics & A.I. and Smart Cities.</li><img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/RobotArm.jpg" alt="RobotArm" width="500">
+            <h2 class="featurette-heading">Undergraduate Researcher<span class="text-muted"> Mar 2024 - Present</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#researchDetails" aria-expanded="false" aria-controls="researchDetails">
+                Show/Hide Details
+            </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/CAV.jpg" alt="CAV" width="450">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/CAVteam.jpg" alt="DCL" width="450">
-          <hr class="featurette-divider">
-          
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/RobotArm2.jpg" alt="RobotArm2" width="450">
+        <div class="collapse" id="researchDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>I am a researcher in Professor Wenchao Li's Dependable Computing Lab, Boston University College of Engineering.</li>
+                    <li>I implemented Python scripts with ROS Noetic for autonomously controlling a Robotics Arm, preparing for embedding machine learning and localization in the Robotics Arm.</li>
+                    <li>In addition, with the team, I assisted in the Safe and Connected Autonomous Vehicles research project; testing and developing code in Python with ROS Melodic for path planning and control and feedback algorithm (PID tuning) to function an autonomous robot.</li>
+                </ul>
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/RobotArm.jpg" alt="RobotArm" width="500">
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/CAV.jpg" alt="CAV" width="450">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/CAVteam.jpg" alt="DCL" width="450">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/RobotArm2.jpg" alt="RobotArm2" width="450">
+            </div>
+        </div>
+      </div>
+    
+
+      <hr class="featurette-divider">
+      <!-- Robotics Engineer -->
+      <div class="row featurette" id="RoboticsEngineer">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Robotics Engineer<span class="text-muted"> Sep 2023 - Present</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#roboticsEngineerDetails" aria-expanded="false" aria-controls="roboticsEngineerDetails">
+                Show/Hide Details
+            </button>
+        </div>
+        <div class="collapse" id="roboticsEngineerDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Robotics Engineer under BU Mars Rover Club</li>
+                    <li>Designing Robotics Arm components such as Casing, Spacers, Safety Washers, Bearing Caps, etc. in CAD</li>
+                    <li>Developing and Improving the end-effector grippers for the Delivery Missions and Equipment Servicing Missions</li>
+                    <li>Observing and Testing the Assembly and Functionality of the Robotics Arm for the Mars Rover to compete in Rover Challenges</li>
+                </ul>
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/RoverArm.png" alt="robotic arm" width="470">
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/BUMRC.jpg" alt="BUMRC">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/BUMRCteam.JPG" alt="BUMRCteam">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/EndEffector.png" alt="EndEffector" width="300">
+            </div>
         </div>
       </div>
 
       <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Process Engineer<span class="text-muted"> May 2024 - July 2024</span></h2>
-          <li class="lead">I was offered the summer 2024 internship at Bank of Thailand, Note Printing Work as a process engineer intern.</li>
-          <li class="lead">Details of my work are confidential due to Bank of Thailand's agreement: please privately contact for more detail</li>
-        </div>
-        <!-- <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="BOT Intern">
-        </div> -->
-      </div>
 
-      <hr class="featurette-divider">
-      <div class="row featurette">
+      <!-- Process Engineer -->
+      <div class="row featurette" id="ProcessEngineer">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Robotics Arm Engineer<span class="text-muted"> Sep 2023 - Present</span></h2>
-          <li class="lead">Robotics Arm Engineer under BU Mars Rover Club</li>
-          <li class="lead">Designing Robotics Arm components such as Casing, Spacers, Safety Washers, Bearing Caps, etc. in CAD</li>
-          <li class="lead">Developing and Improving the end-effector grippers for the Delivery Missions and Equipment Servicing Missions</li>
-          <li class="lead">Observing and Testing the Assembly and Functionality of the Robotics Arm for the Mars Rover to compete in Rover Challenges</li>
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/RoverArm.png" alt="robotic arm" width="470">
+            <h2 class="featurette-heading">Process Engineer<span class="text-muted"> May 2024 - July 2024</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#processEngineerDetails" aria-expanded="false" aria-controls="processEngineerDetails">
+                Show/Hide Details
+            </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/BUMRC.jpg" alt="BUMRC">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/BUMRCteam.JPG" alt="BUMRCteam">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/EndEffector.png" alt="EndEffector" width="300">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Teaching Assistant<span class="text-muted"> Jan 2024 - May 2024</span></h2>
-          <li class="lead">I was TA for Introduction to Engineering: Hands-on (ENG EK 131), Boston University College of Engineering.</li>
-          <li class="lead">During 3-hour weekly office hour and 2-hour weekly lecture, guiding and teaching over 400 students in CAD, Product Design, Product Assembly, 3D printing, Microcontroller Programming, Designing and Soldering Circuits, and Mechanical Drawing.</li>
-          <li class="lead">Weekly check-up the quality and quantity of Engineering tools in the workspace.</li>
-          <li class="lead">Weekly troubleshooting 3D printers as an extra duty.</li>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/3Dprinter.jpg" alt="3Dprinter" width="375">
-          <hr class="featurette-divider">
-          <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/EK131OH.jpg" alt="OHEK131" width="375">
+        <div class="collapse" id="processEngineerDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>I was offered the summer 2024 internship at Bank of Thailand, Note Printing Work.</li>
+                    <li>Researching in banknote process engineering and development projects, contributing to the development of innovative solutions for $2.7M Quality Inspection Machine that increased defect classification accuracy from 68% to 85% and reduced the waiting time of defect report by 99.17%.</li>
+                    <li>Developed Deep Learning (ResNet101) and Machine Learning (Multi-class classification) models utilizing AI Image Processing for defect banknote classification in high-security environments.</li>
+                    <li>Restructured how Computer Vision perceived the images and extracted XML files to facilitate the model; Improved accuracy from 68.23% to 85.67%, particularly improving one of the defect detections from 5.3% to 84.45%.</li>
+                    <li>Implemented Python script with batch file to automate the model implementation via BOT's server resulting in decreasing waiting time for the report from 5 days to 1 hour.</li>
+                    <li>Applying Lean Manufacturing for designing new Industrial Plant Planning for one of the process flows, integrating pull system to optimize the process resulting in 200% increase in production storage area.</li>
+                    <li>Researching in AGV for one of the process flows, designing the Robot Path Planning that will increase OEE(A) of product transfer in assembly line from 64.3% to 85.7%.</li>
+                    <li>Presenting the projects to the manager, director, and senior director.</li>
+                    <li>Assisting Senior Engineer in process flows and training sessions for new machinery, bridging language barriers between German instructors from the vendor and Thai technicians.</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/BOTIntern.jpg" alt="BOTIntern">
+            </div>
         </div>
       </div>
 
       <hr class="featurette-divider">
-      <div class="row featurette">
+
+      <!-- Teaching Assistant -->
+      <div class="row featurette" id="TeachingAssistant">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Technology Subcommittee<span class="text-muted"> Sep 2023 - Feb 2024</span></h2>
-          <li class="lead">I was a technology subcommittee in Association of Thai Students in the United States of America (ATSA).</li>
-          <li class="lead">Maintaining ATSA information technology infrastructure: domains, web servers, and email service and proposing new technology initiatives for ATSA.</li>
-          <li class="lead">Developing new <a href="https://www.athaisa.org">ATSA website</a> and keeping updating information.</li>
+            <h2 class="featurette-heading">Teaching Assistant<span class="text-muted"> Jan 2024 - May 2024</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#teachingAssistantDetails" aria-expanded="false" aria-controls="teachingAssistantDetails">
+                Show/Hide Details
+            </button>
+        </div>
+        <div class="collapse" id="teachingAssistantDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>I was TA for Introduction to Engineering: Hands-on (ENG EK 131), Boston University College of Engineering: Professor Ousama A'Amar, Professor Christine Mulvey, Professor Kenneth Sebesta</li>
+                    <li>During 3-hour weekly office hour and 2-hour weekly lecture (Professor Christine Mulvey), guiding and teaching over 400 students in CAD, Product Design, Product Assembly, 3D printing, Microcontroller Programming, Designing and Soldering Circuits, and Mechanical Drawing</li>
+                    <li>Weekly check-up the quality and quantity of Engineering tools in the workspace</li>
+                    <li>Weekly troubleshooting 3D printers as an extra duty</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/3Dprinter.jpg" alt="3Dprinter" width="375">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/EK131OH.jpg" alt="OHEK131" width="375">
+            </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- Electrical Engineer -->
+      <div class="row featurette" id="ElectricalEngineer">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Electrical Engineer<span class="text-muted"> Sep 2023 - Feb 2024</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#electricalEngineerDetails" aria-expanded="false" aria-controls="electricalEngineerDetails">
+                Show/Hide Details
+            </button>
+        </div>
+        <div class="collapse" id="electricalEngineerDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Electrical Engineer under BU Mars Rover Club</li>
+                    <li>Wired circuits for the Power Regulation system of the Mars Rover, ensuring robust performance and reliability in extreme environments</li>
+                    <li>Acquired proficiency in Software for PCB Design, leveraging tools to enhance design efficiency and accuracy</li>
+                    <li>Conducted rigorous Electrical Load Tests to validate circuit performance and compliance with mission requirements</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/BUMRC2.jpg" alt="BUMRC2" height="200">
+            </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- Technology Subcommittee -->
+      <div class="row featurette" id="TechnologySubcommittee">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Technology Subcommittee<span class="text-muted"> Sep 2023 - Feb 2024</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#technologySubcommitteeDetails" aria-expanded="false" aria-controls="technologySubcommitteeDetails">
+                Show/Hide Details
+            </button>
+        </div>
+        <div class="collapse" id="technologySubcommitteeDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>I was a technology subcommittee in Association of Thai Students in the United States of America (ATSA).</li>
+                    <li>Maintaining ATSA information technology infrastructure: domains, web servers, and email service and proposing new technology initiatives for ATSA.</li>
+                    <li>Developing new <a href="https://www.athaisa.org">ATSA website</a> and keeping it updated with the latest information.</li>
+                </ul>
+            </div>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <h1 align="center">Non-Engineering Experience</h1>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="MathGrade">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Mathematics Grader<span class="text-muted"> Jan 2023 - May 2024</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#MathGradeDetails" aria-expanded="false" aria-controls="MathGradeDetails">
+                Show/Hide Details
+            </button>
+        </div>
+        <div class="collapse" id="MathGradeDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Spring 2024 CAS MA 193 Discrete Mathematics for Engineering: Professor Thomas Enkosky</li>
+                    <li>Spring 2023, Fall 2023 CAS MA 121 Calculus for the Life and Social Sciences I: Professor Timothy Kohl, Professor Eric Simonian</li>
+                    <li>Evaluating weekly calculus assignments and developing comprehensive rubrics to ensure consistent grading standards</li>
+                    <li>Collaborating with the professor, TA, and fellow graders to allocate responsibilities effectively and track assignment progress</li>
+                    <li>Delivering constructive feedback and detailed explanations to students, fostering their understanding and facilitating improvement in subsequent assignments</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="Author">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Co-Author<span class="text-muted"> May 2018 - Jan 2019</span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#AuthorDetails" aria-expanded="false" aria-controls="AuthorDetails">
+                Show/Hide Details
+            </button>
+        </div>
+        <div class="collapse" id="AuthorDetails">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>Head of Science and English book</li>
+                    <li>Published 1,200 academic guideline book sets (UmPhraKeaw 10 and Zenith XIII) with 44-member team</li>
+                    <li>Sold online-onsite and Earned $30,000 for extracurricular activities and community service</li>
+                    <li>Facebook: <a href="https://www.facebook.com/gm16tu81books/"> Zenith XIII & เอื้อมพระเกี้ยว ๑๐ By TU81 GM16</a></li>
+                </ul>
+            </div>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
       <!-- <hr class="featurette-divider">
-      <div class="row featurette">
+      <div class="row featurette" id="">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Teaching Assistant<span class="text-muted"> Jan 2024 - May 2024</span></h2>
-          <p class="lead">Details</p>
+            <h2 class="featurette-heading"><span class="text-muted"></span></h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Details" aria-expanded="false" aria-controls="Details">
+                Show/Hide Details
+            </button>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="collapse" id="Details">
+            <div class="col-md-7">
+                <ul class="lead">
+                    <hr class="featurette-divider">
+                    <li>(You may add more details here)</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <hr class="featurette-divider">
+                <img class="featurette-image img-responsive center-block" src="../public/images/Photo for Experience/" alt="">
+            </div>
         </div>
       </div> -->
 
@@ -223,6 +391,8 @@
     <script src="../../bootstrap-3.4.1/docs/assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../bootstrap-3.4.1/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </body>
 </html>
 
