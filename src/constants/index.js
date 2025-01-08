@@ -75,7 +75,7 @@ const services = [
     icon: embed,
   },
   {
-    title: 'Robotics & A.I.',
+    title: 'Robotics & AI',
     icon: robot,
   },
   {
@@ -266,7 +266,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'Inventory Application',
-    description: 'An inventory management tool (Desktop Application) aimed to assist small retail businesses powered by Nodejs, Electronjs, Python, HTML/CSS, Javascript, Mongodb',
+    description: 'An inventory management tool (Desktop Application) aimed to assist small retail businesses powered by Nodejs, Electronjs, Python, HTML/CSS, JavaScript, Mongodb',
     tags: [
       {
         name: 'nodejs',

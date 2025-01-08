@@ -103,7 +103,7 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
-          {/* <VerticalTimelineElement
+          <VerticalTimelineElement
             contentStyle={{
               background: '#eaeaec',
               color: '#292929',
@@ -137,7 +137,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'resume link', //paste the link to your resume here
+                  'https://drive.google.com/drive/folders/1NVWiKAZfAmMIgBGt0y15UDDCHoO3YYl-?usp=sharing',
                   '_blank'
                 )
               }
@@ -159,7 +159,7 @@ const Experience = () => {
                 w-[23px] h-[23px] object-contain"
               />
             </button>
-          </VerticalTimelineElement> */}
+          </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
     </>

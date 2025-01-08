@@ -151,7 +151,7 @@ const Projects = () => {
       <div className="w-full flex justify-center items-center">
         <motion.a
           variants={fadeIn('', '', 0.1, 1)}
-          href="https://www.google.com"
+          href="https://preespp.github.io/all-projects/"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 text-center text-timberWolf font-bold py-3 px-6 
@@ -162,7 +162,7 @@ const Projects = () => {
         </motion.a>
       </div>
 
-      <div className="w-full flex justify-center items-center">
+      {/* <div className="w-full flex justify-center items-center">
       <motion.a
           variants={fadeIn('', '', 0.1, 1)}
           href="https://preespp.github.io"
@@ -174,7 +174,7 @@ const Projects = () => {
         >
           Pree's Tinker Area (Coming Soon)
         </motion.a>
-      </div>
+      </div> */}
 
     </div>
   );
