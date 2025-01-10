@@ -8,7 +8,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { educations } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover } from '../assets'; // Import hover assets
+import { download, downloadHover } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const EducationCard = ({ education }) => {
@@ -84,13 +84,12 @@ const EducationCard = ({ education }) => {
         >
           {detailsVisible ? 'Hide Details' : 'Show Details'}
         </button>
-        {detailsVisible && (
-          <p
-            className="mt-4 text-[10px] text-taupe font-beckman 
-              bg-jetLight rounded-[5px]"
-          >
-            {education.details}
-          </p>
+        {detailsVisible && Array.isArray(education.details) && (
+          <ul className="mt-4 text-[14px] text-taupe font-beckman bg-jetLight rounded-[5px] p-3 list-disc">
+            {education.details.map((detail, index) => (
+              <li key={index}>{detail}</li>
+            ))}
+          </ul>
         )}
       </div>
     </VerticalTimelineElement>

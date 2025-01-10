@@ -158,7 +158,7 @@ const Projects = () => {
                     rounded-lg bg-taupe hover:bg-gray-800 transition-all 
                     duration-300 text-[18px] leading-[30px]"
         >
-          View All Projects (Coming Soon)
+          View All Projects
         </motion.a>
       </div>
 

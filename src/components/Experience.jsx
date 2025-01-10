@@ -54,7 +54,7 @@ const ExperienceCard = ({ experience }) => {
         style={{ margin: 0 }}>
         {experience.company_name}
       </p>
-      {/* <button
+      <button
           className="flex justify-center items-center 
             text-[12px] text-timberWolf 
             font-bold font-beckman py-2 px-3 
@@ -75,14 +75,13 @@ const ExperienceCard = ({ experience }) => {
         >
           {detailsVisible ? 'Hide Details' : 'Show Details'}
         </button>
-        {detailsVisible && (
-          <p
-            className="mt-4 text-[10px] text-taupe font-beckman 
-              bg-jetLight rounded-[5px]"
-          >
-            {experience.details}
-          </p>
-        )} */}
+        {detailsVisible && Array.isArray(experience.details) && (
+          <ul className="mt-4 text-[14px] text-taupe font-beckman bg-jetLight rounded-[5px] p-3 list-disc">
+            {experience.details.map((detail, index) => (
+              <li key={index}>{detail}</li>
+            ))}
+          </ul>
+        )}
     </div>
   </VerticalTimelineElement>
 );
