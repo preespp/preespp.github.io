@@ -39,7 +39,6 @@ import {
   room,
   mrc,
   fpga,
-  evoting,
   robot_hack,
 } from '../assets';
 

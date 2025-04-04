@@ -60,7 +60,6 @@ import room from './projects/RoomBox2.png';
 import mrc from './projects/Rover.png';
 import robot_hack from './projects/HackRobot.png'
 import fpga from './projects/FPGA.png';
-import evoting from './projects/Evoting.png';
 
 export {
   bg_pree,
@@ -118,6 +117,5 @@ export {
   room,
   mrc,
   fpga,
-  evoting,
   robot_hack,
 };
