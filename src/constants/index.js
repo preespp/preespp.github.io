@@ -40,6 +40,7 @@ import {
   mrc,
   fpga,
   evoting,
+  robot_hack,
 } from '../assets';
 
 export const navLinks = [
@@ -48,16 +49,16 @@ export const navLinks = [
     title: 'About',
   },
   {
-    id: 'education',
-    title: 'Education',
-  },
-  {
     id: 'projects',
     title: 'Projects',
   },
   {
     id: 'experience',
     title: 'Experience',
+  },
+  {
+    id: 'education',
+    title: 'Education',
   },
   {
     id: 'contact',
@@ -117,10 +118,10 @@ const technologies = [
     name: 'JavaScript',
     icon: javascript,
   },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
+  // {
+  //   name: 'TypeScript',
+  //   icon: typescript,
+  // },
   {
     name: 'React JS',
     icon: reactjs,
@@ -145,10 +146,10 @@ const technologies = [
     name: 'Pytorch',
     icon: pytorch,
   },
-  {
-    name: 'Pandas',
-    icon: pandas,
-  },
+  // {
+  //   name: 'Pandas',
+  //   icon: pandas,
+  // },
   {
     name: 'Numpy',
     icon: numpy,
@@ -188,7 +189,7 @@ const educations = [
     school: 'Boston University',
     gpa: '3.96/4.00',
     degree: 'BS Computer Engineering minor in Mechanical Engineering concentration in Robotics',
-    details: ['Tau Beta Pi: Engineering Honor Society (top 12.5% of class)','Dean`s List Every Semester',
+    details: ['Tau Beta Pi: Engineering Honor Society','Dean`s List Every Semester',
     'Hardware Courseworks: Embedded Systems, Smart and Connected Systems, Computer Organization, Logic Design, Electric Circuits',
     'Software Courseworks: Machine Learning, Software Engineering, Applied Algorithms for Engineers, Computer Networking',
     'Mechanical Courseworks: Robotics,  Mechanics I & II (Static+Dynamics), Supply Chain Engineering, Engineering Design, Engineering Hands-on',
@@ -369,18 +370,17 @@ const projects = [
     ],
     image: mrc,
     repo: 'https://github.com/BUMRC',
-    demo: '',
+    demo: 'https://www.youtube.com/watch?v=yFyZpHNn1oE&t=18s',
   },
   {
     id: 'project-4',
-    name: 'E-Voting',
-    description: `Node.js-Based E-Voting System is a platform for secure and efficient voting, combining UDP-based vote submission with a real-time web interface for result visualization and administrative control.`+
-    'The system is built on multiple ESP32 using real-time database to exchange information in distributed systems',
+    name: 'Coin Collector Robot',
+    description: '1-week BU Hardware Robotics Hackathon, challenge to build robot with mechanism to collect thin small magnetic coins and compete to score in the limited time; awarded 1st place with one round of sweep the arena',
     tags: [
     ],
-    image: evoting,
-    repo: 'https://github.com/preespp/Team2-Simphliphan-Gan-Theogene-Jiang/tree/main/quest-4',
-    demo: 'https://www.youtube.com/watch?v=MBqvb3oTLFw',
+    image: robot_hack,
+    repo: '',
+    demo: 'https://drive.google.com/file/d/1wlkO68M9oYhH6aIRdplqJJEwUHvWy3Ty/view?usp=drive_link',
   },
   {
     id: 'project-5',

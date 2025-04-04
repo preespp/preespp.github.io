@@ -57,7 +57,8 @@ import atsa from './company/atsa.png'
 
 import inventory from './projects/Dashboard.png';
 import room from './projects/RoomBox2.png';
-import mrc from './projects/RoverArm.png';
+import mrc from './projects/Rover.png';
+import robot_hack from './projects/HackRobot.png'
 import fpga from './projects/FPGA.png';
 import evoting from './projects/Evoting.png';
 
@@ -118,4 +119,5 @@ export {
   mrc,
   fpga,
   evoting,
+  robot_hack,
 };

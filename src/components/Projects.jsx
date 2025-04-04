@@ -125,7 +125,8 @@ const Projects = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
           These projects reflected how I would like to contribute my engineering skills to real-world applications outside schools
-          and I want to work on the solutions that solve some problems to the world.
+          and I want to work on the solutions that solve some problems to the world. Below are sample of 5 projects that I have tackled
+          as an individual and as a team. Feel free to check out other projects by clicking View All Projects button below.
         </motion.p>
       </div>
 
