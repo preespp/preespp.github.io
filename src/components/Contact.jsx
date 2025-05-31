@@ -148,7 +148,7 @@ const Contact = () => {
               className="live-demo flex justify-between 
               sm:text-[20px] text-[16px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[130px] sm:h-[50px] 
+              whitespace-nowrap gap-1 sm:w-[103px] sm:h-[50px] 
               w-[100px] h-[45px] rounded-[10px] bg-night 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
@@ -169,34 +169,7 @@ const Contact = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              MyLinkedin
-          </button>
-          <button
-              className="live-demo flex justify-between 
-              sm:text-[20px] text-[16px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[130px] sm:h-[50px] 
-              w-[100px] h-[45px] rounded-[10px] bg-night 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
-              onClick={() => 
-                window.open(
-                  'mailto:prees26@bu.edu', 
-                  '_self'
-                )
-              }
-              onMouseOver={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', downloadHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', download);
-              }}>
-              MyEmail
+              Linkedin
           </button>
       </motion.div>
     </div>

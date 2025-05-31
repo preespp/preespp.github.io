@@ -54,34 +54,18 @@ const ExperienceCard = ({ experience }) => {
         style={{ margin: 0 }}>
         {experience.company_name}
       </p>
-      <button
-          className="flex justify-center items-center 
-            text-[12px] text-timberWolf 
-            font-bold font-beckman py-2 px-3 
-            rounded-[5px] bg-jetLight 
-            mt-4 hover:bg-battleGray hover:text-eerieBlack 
-            transition duration-[0.2s] ease-in-out"
-          onClick={toggleDetails}
-          onMouseOver={() => {
-            document
-              .querySelector('.download-btn')
-              .setAttribute('src', downloadHover); 
-          }}
-          onMouseOut={() => {
-            document
-              .querySelector('.download-btn')
-              .setAttribute('src', download); 
-          }}
+
+      <p
+          style={{ margin: 0 }}
         >
-          {detailsVisible ? 'Hide Details' : 'Show Details'}
-        </button>
-        {detailsVisible && Array.isArray(experience.details) && (
-          <ul className="mt-4 text-[14px] text-taupe font-beckman bg-jetLight rounded-[5px] p-3 list-disc">
+        {Array.isArray(experience.details) && (
+          <ul className="text-[12px] rounded-[3px] p-2 list-disc">
             {experience.details.map((detail, index) => (
               <li key={index}>{detail}</li>
             ))}
           </ul>
         )}
+        </p>
     </div>
   </VerticalTimelineElement>
 );
@@ -129,7 +113,7 @@ const Experience = () => {
               className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
+              whitespace-nowrap gap-1 sm:w-[230px] sm:h-[58px] 
               w-[125px] h-[46px] rounded-[10px] bg-jetLight 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
@@ -150,7 +134,7 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              MY RESUME
+              RESUME + Transcript
               <img
                 src={download}
                 alt="download"

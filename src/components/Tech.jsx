@@ -26,11 +26,11 @@ const Tech = () => {
       </motion.div>
 
       <div className="flex-wrap flex mt-14 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        <li>Firmware: Beaglebone, ESP32, FPGA (Nexys Artix-7), Raspberry Pi, NVIDIA Jetson (Nano and AGX Orin), Arduino (Mirco, Nano, Uno)</li>
+        <li>Embedded Boards: Beaglebone Black, ESP32, FPGA (Nexys Artix-7), Raspberry Pi, NVIDIA Jetson (Nano and AGX Orin), Arduino (Mirco, Nano, Uno)</li>
         <li>Embedded Systems: Verilog, Assembly Language, RTOS, Kernal Modules, Device Driver, Operating Systems, Profiling, Distributed Systems, Expressif IoT, I2C, TCP/IP, UART, UDP, LiDAR, IR Sensor, GPS, Motor Driver </li>
-        <li>Software Tools: Linux, Ubuntu, Wireshark, Python sockets, Mininet, OpenFlow, ROS2, Unittest, HTML/CSS, MongoDB, MySQL, Google Firebase, Matplotlib, Scikit-learn, Canva</li>  
-        <li>Electrical: Soldering, Circuit Wiring, Circuit Design (KiCAD), Power Systems, Oscilloscope</li>
-        <li>Mechanical: Engineering Sketching, 3D printing, CAD (Onshape, Solidworks, AutoCAD), Wood work, Machine Shop</li>
+        <li>Software Tools: Shell, Linux, Ubuntu, Wireshark, Python sockets, Mininet, OpenFlow, ROS2, gprof, GDB, Unittest, MongoDB, MySQL, Google Firebase, Matplotlib, Scikit-learn</li>  
+        <li>Electrical: Soldering, Circuit Wiring, Circuit Design (KiCAD), Power Systems, Oscilloscope, Multimeter</li>
+        <li>Mechanical: Engineering Sketching, 3D printing, CAD (Onshape, Solidworks), Wood work, Machine Shop</li>
        </div>
     
     </>

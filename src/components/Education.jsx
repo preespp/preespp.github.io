@@ -6,7 +6,7 @@ import {
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
-import { educations } from '../constants';
+import { educations, courseworks, certificate} from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover } from '../assets';
 import { textVariant } from '../utils/motion';
@@ -63,35 +63,45 @@ const EducationCard = ({ education }) => {
         >
           {education.degree}
         </p>
-        <button
-          className="flex justify-center items-center 
-            text-[12px] text-timberWolf 
-            font-bold font-beckman py-2 px-3 
-            rounded-[5px] bg-jetLight 
-            mt-4 hover:bg-battleGray hover:text-eerieBlack 
-            transition duration-[0.2s] ease-in-out"
-          onClick={toggleDetails}
-          onMouseOver={() => {
-            document
-              .querySelector('.download-btn')
-              .setAttribute('src', downloadHover); 
-          }}
-          onMouseOut={() => {
-            document
-              .querySelector('.download-btn')
-              .setAttribute('src', download); 
-          }}
+
+        <p
+          style={{ margin: 0 }}
         >
-          {detailsVisible ? 'Hide Details' : 'Show Details'}
-        </button>
-        {detailsVisible && Array.isArray(education.details) && (
-          <ul className="mt-4 text-[14px] text-taupe font-beckman bg-jetLight rounded-[5px] p-3 list-disc">
+        {Array.isArray(education.details) && (
+          <ul className="text-[12px] rounded-[3px] p-2 list-disc">
             {education.details.map((detail, index) => (
               <li key={index}>{detail}</li>
             ))}
           </ul>
         )}
+        </p>
       </div>
+    </VerticalTimelineElement>
+  );
+};
+
+const CourseworksCard = ({courseworks}) => {
+  const [detailsVisible, setDetailsVisible] = useState(false);
+
+  const toggleDetails = () => {
+    setDetailsVisible(!detailsVisible);
+  };
+
+  return (
+    <VerticalTimelineElement>
+    </VerticalTimelineElement>
+  );
+};
+
+const CertificateCard = ({certificate}) => {
+  const [detailsVisible, setDetailsVisible] = useState(false);
+
+  const toggleDetails = () => {
+    setDetailsVisible(!detailsVisible);
+  };
+
+  return (
+    <VerticalTimelineElement>
     </VerticalTimelineElement>
   );
 };
@@ -110,6 +120,12 @@ const Education = () => {
             <EducationCard key={index} education={experience} />
           ))}
         </VerticalTimeline>
+      </div>
+
+      <div className="mt-20 flex flex-col">
+      </div>
+
+      <div className="mt-20 flex flex-col">
       </div>
     </>
   );

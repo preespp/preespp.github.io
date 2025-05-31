@@ -40,6 +40,10 @@ import {
   mrc,
   fpga,
   robot_hack,
+  pttep,
+  hface,
+  mips,
+  penguin
 } from '../assets';
 
 export const navLinks = [
@@ -71,7 +75,7 @@ const services = [
     icon: backend,
   },
   {
-    title: 'Hardware Development',
+    title: 'Firmware Development',
     icon: embed,
   },
   {
@@ -117,22 +121,10 @@ const technologies = [
     name: 'JavaScript',
     icon: javascript,
   },
-  // {
-  //   name: 'TypeScript',
-  //   icon: typescript,
-  // },
   {
     name: 'React JS',
     icon: reactjs,
   },
-  // {
-  //   name: 'Bootstrap',
-  //   icon: bootstrap,
-  // },
-  // {
-  //   name: 'Tailwind CSS',
-  //   icon: tailwind,
-  // },
   {
     name: 'Electron JS',
     icon: electronjs,
@@ -186,13 +178,13 @@ const technologies = [
 const educations = [
   {
     school: 'Boston University',
-    gpa: '3.96/4.00',
-    degree: 'BS Computer Engineering minor in Mechanical Engineering concentration in Robotics',
-    details: ['Tau Beta Pi: Engineering Honor Society','Dean`s List Every Semester',
-    'Hardware Courseworks: Embedded Systems, Smart and Connected Systems, Computer Organization, Logic Design, Electric Circuits',
-    'Software Courseworks: Machine Learning, Software Engineering, Applied Algorithms for Engineers, Computer Networking',
-    'Mechanical Courseworks: Robotics,  Mechanics I & II (Static+Dynamics), Supply Chain Engineering, Engineering Design, Engineering Hands-on',
-    'Mathematics Courseworks: Probability Statistics & Data Science for Engineer, Computational Linear Algebra, Differential Equations, Multivariate Calculus, Discrete Mathematics for Engineering'],
+    gpa: '3.97/4.00',
+    degree: 'BS Computer Engineering Minor in Mechanical Engineering Concentration in Robotics',
+    details: ['Tau Beta Pi: Engineering Honor Society',
+    'Dean`s List Every Semester',
+    '1st place Robotics Hackathon 2025',
+    '3rd place Hardware Hackathon 2023',
+    ],
     icon: bu,
     iconBg: '#333333',
     date: 'Sep 2022 - May 2026',
@@ -201,8 +193,10 @@ const educations = [
     school: 'Brewster Academy',
     gpa: '4.233/4.330',
     degree: 'Postgraduate Year',
-    details: ['King`s scholarship from Royal Thai Government to pursue Bahcelor`s degree aboard',
-    'Graduated with 2 Magna Cum Laude and 1 Summa Cum Laude Academic Honor Awards'],
+    details: ['Magna Cum Laude (Fall + Winter) and Summa Cum Laude (Spring)',
+    'AP Scholar Award',
+    'AMC 12A 118.5 Earned Honor Roll',
+    ],
     icon: ba,
     iconBg: '#333333',
     date: 'Sep 2021 - May 2022',
@@ -211,7 +205,10 @@ const educations = [
     school: 'Triam Udom Suksa School',
     gpa: '3.95/4.00',
     degree: 'High School Gifted Math Students Program',
-    //details: '-',
+    details: ['King`s scholarship from Royal Thai Government to pursue Bahcelor`s degree aboard',
+    'High Distinction in Australian National Chemistry Quiz (ANCQ)',
+    'Silver Medal Thailand Mathematics Olympiad',
+    ],
     icon: tu,
     iconBg: '#333333',
     date: 'May 2018 - Mar 2021',
@@ -219,178 +216,161 @@ const educations = [
   {
     school: 'Patumwan Demonstration School, Srinakharinwirot University',
     gpa: '3.99/4.00',
-    degree: 'Middle School Gifted Math Students',
-    //details: '-',
+    degree: 'Middle School Gifted Math Students Program',
+    details: ['Silver Medal International Mathematics Competition at Bulgaria as Thailand representative',
+    'Certificate for youth who bring fame to the nation in Academics',
+    'Distinction in Australian Mathematics Competition (AMC)',
+    ],
     icon: pds,
     iconBg: '#333333',
     date: 'May 2015 - Mar 2018',
   },
 ];
 
+const courseworks = [
+  {
+    type: 'Hardware',
+    lists: ['Embedded Systems', 'Smart and Connected Systems', 'Computer Organization', 'Logic Design', 'Electric Circuits'],
+  },
+  {
+    type: 'Software',
+    lists: ['Operating Systems', 'Cloud Computing', 'Machine Learning', 'Computer Networking','Software Engineering', 'Applied Algorithms for Engineers'],
+  },
+  {
+    type: 'Mechanical',
+    lists: ['Robotics',  'Mechanics I (Static)', 'Mechanics II (Dynamics+Kinematics)', 'Supply Chain Engineering', 'Engineering Design', 'Engineering Hands-on'],
+  },
+];
+
+const certificate = [
+  {
+    name: '',
+    photo: ''
+  },
+];
+
 const experiences = [
   {
-    title: 'Robotics Software Engineer & Electrical Engineer (Deputy Lead)',
-    company_name: 'BU Mars Rover Club, Boston MA',
-    icon: bumrc,
+    title: 'Software Engineer Intern',
+    company_name: 'PTT Exploration and Production Public Company Limited (PTTEP)',
+    icon: pttep,
     iconBg: '#333333',
-    date: 'Sep 2023 - Present',
-    details: ['Rapid Prototyped components in Onshape, improving Casing surface protection capabilities by 60% with a new design',
-    'Conducted assembly and testing of Robotics Arm for the Equipment Servicing Missions with a 7-member team weekly',
-    'Researched on Dynamixel Servo Motor and Implemented controller encoder (Servo Controls) with NVIDIA Jetson',
-    'Configured GPS module and wrote script for ROS2 Node to connect with other parts in Embedded Systems',
-    'Wired circuits for the Power Regulation system of the Mars Rover',
-    'Acquired proficiency in Software for PCB Design, leveraging tools to enhance design efficiency and accuracy',
-    'Conducted rigorous Electrical Load Tests to validate circuit performance and compliance with mission requirements']
+    date: 'May 2025 - Jul 2025',
+    details: ['incoming',],
   },
   {
     title: 'Robotics Researcher',
-    company_name: 'Dependable Computing Laboratory, Boston MA',
+    company_name: 'Dependable Computing Laboratory',
     icon: bueng,
     iconBg: '#333333',
     date: 'Mar 2024 - Dec 2024',
     details: ['Dependable Computing Laboratory, Professor Wenchao Li',
-    'Implemented Python scripts with ROS Noetic for autonomous control with a Robotics Arm, focusing on enhancing autonomous decision-making and operational efficiency and troubleshooting hardware gripper',
-    'Co-Research Projects with Control and Optimization of Discrete Event Systems Laboratory, Professor Christos Cassandras',
-    'Developed and optimized Python code with ROS Melodic in Linux for control and feedback algorithms with PhD candidates to advance multi-agent Safe and Connected Autonomous Vehicles for Smart Cities research',
-    'Hardware-in-the-loop Simulation for multi-agent self-driving vehicles in CARLA [Funded by Undergraduate Research Opportunity Program (UROP)]',
+    'Implemented Python scripts with ROS for autonomous control with a Robotics Arm and troubleshooting hardware gripper',
+    'Developed and optimized Python code with ROS in Linux for control and feedback algorithms with PhD candidates to advance multi-agent Safe and Connected Autonomous Vehicles for Smart Cities with 5 researchers',
+    'Hardware-in-the-loop Simulation for multi-agent self-driving vehicles in CARLA [Funded by Undergraduate Research Opportunity Program (UROP)] Co-Research Projects with CODES Laboratory, Professor Christos Cassandras',
     'Performed Hardware Testing for Control Systems and Real-time Coordination between multiple robots with Optitrack Motion Capture in Python and ROS to ensure safe travel of all vehicles in an intersection and merging map',
     'Unit Tested algorithms that update the Priority Queue of different zones of the map',
-    'Researched on LIDAR camera to visualize data on Matplotlib and prepare data collection for Deep Learning model training in the future'],
-  },
-  {
-    title: 'Engineer Intern',
-    company_name: 'Bank of Thailand (Note Printing Works), Thailand',
-    icon: bot,
-    iconBg: '#333333',
-    date: 'May 2024 - Jul 2024',
-    details: ['Engineered a Computer Vision solution, training Deep Learning (ResNet101) and Machine Learning (Multi-class classification) for defect classification in OpenCV, Scikit-learn, Pytorch, and Python, increasing model accuracy from 68.23% to 85.67%, particularly improving one of the defect-type accuracy from 5.3% to 84.45%',
-    'Systematized Python to implement model with bash scripting decreasing waiting time for defect reports from 5 days to 1 hour',
-    'Researched process engineering and AGV, applying Lean Manufacturing for new Industrial Plant Planning, and optimizing the production storage with a 200% increase, designing the Robot Path Planning that will increase product transfer by 33.28%',
-    'Assisting Senior Engineer in process flows and training sessions for new machinery, bridging language barriers between German instructors from the vendor and Thai technicians'],
-  },
-  {
-    title: 'Technology Committee (Volunteer)',
-    company_name: 'Association of Thai Students in the United States of America (ATSA), Remote',
-    icon: atsa,
-    iconBg: '#333333',
-    date: 'Sep 2023 - Present',
-    details: ['Maintained ATSA`s information technology infrastructure: domains, web servers, and email services',
-    'Developed ATSA website and keeping updating information',
-    'Proposed new technology initiatives for ATSA',
-    'Performed data cleansing of a mailing list from attendees` data in each event in the span of 2 years leading to more organized and classified data over 4 regions of over a thousand mailing lists',
-    'Connected and Reached out to 500+ LinkedIn members in searching for potential mentors from Tech, Business, Art, Pre-Med, and STEM fields for the upcoming mentorship program'],
+    'Researched on LIDAR camera to visualize data on Matplotlib and prepare data collection for Deep Learning model training'],
   },
   {
     title: 'Teaching Assistant',
-    company_name: 'BU College of Engineering, Boston MA',
+    company_name: 'BU College of Engineering',
     icon: bueng,
     iconBg: '#333333',
     date: 'Jan 2024 - Dec 2024',
     details: ['ENG EK 131 Engineering: Hands-on; Professor Ousama A`amar, Professor Christine Mulvey, Professor Kenneth Sebesta',
-    'Guided and instructed over 400 students during lectures and office hours in CAD, Product Assembly, Product Design, 3D Printing, Circuit, Microcontroller Programming, Machining and Mechanical Drawing',
+    'Instructed over 400 students during lectures and office hours in CAD, Product Assembly, Product Design, 3D Printing, Circuit, Microcontroller Programming, Machining and Mechanical Drawing',
     'Hosted 3-hour weekly office hour to provide guidance students in weekly assignment, CAD, Product Design, 3D Printing, Microcontroller Programming, Machining and Mechanical Drawing, circuit wiring and final product assembly',
     'Provided technical support and troubleshooting expertise for 3D printers and Engineering tools in the workspace, contributing to a seamless learning experience in engineering disciplines',
     'ENG EK 301: Engineering Mechanics; Professor Scott Bunch',
-    'Graded weekly assignments and quizzes on Mechanics Statics ranging from Vectors, Truss Analysis, Distributed Forces, Static Equilibrium, Frames, Shear/Bending, and Virtual Work',
-    'Provided feedback and detailed explanations to students to improve their performance'],
+    'Graded weekly assignments and quizzes on Mechanics Statics ranging from Vectors, Truss Analysis, Distributed Forces, Static Equilibrium, Frames, Shear/Bending, and Virtual Work'],
+  },
+  {
+    title: 'Software Engineer Intern',
+    company_name: 'Bank of Thailand Note Printing Works',
+    icon: bot,
+    iconBg: '#333333',
+    date: 'May 2024 - Jul 2024',
+    details: ['Engineered a Computer Vision solution, training Deep Learning (ResNet101) and Machine Learning (Multi-class classification) for defect classification in OpenCV, Scikit-learn, Pytorch, and Python, increasing model accuracy from 68.23% to 85.67%, particularly improving one of the defect-type accuracy from 5.3% to 84.45%',
+    'Systematized Python with Shell Script to implement AI via cronjobs, improving defect-report wait time from 5 days to 1 hour',
+    'Researched process engineering and AGV, applying Lean Manufacturing for new Industrial Plant Planning, and optimizing the production storage with a 200% increase, designing the Robot Path Planning that will increase product transfer by 33.28%',
+    'Assisting Senior Engineer in process flows and training sessions for new machinery, bridging language barriers between German instructors from the vendor and Thai technicians'],
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'Inventory Application',
-    description: 'An inventory management tool (Desktop Application) aimed to assist small retail businesses powered by Nodejs, Electronjs, Python, HTML/CSS, JavaScript, Mongodb',
-    tags: [
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'electronjs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'python',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'html',
-        color: 'orange-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'javascript',
-        color: 'yellow-text-gradient',
-      },
-    ],
-    image: inventory,
-    repo: 'https://github.com/preespp/Inventory_Optimizer',
-    demo: 'https://www.youtube.com/watch?v=NPsZ9VrNPgQ',
-  },
-  {
-    id: 'project-2',
     name: 'Room Occupancy Monitor',
     description:
       'A device to monitor number of people and actutate mechanical system to prevent more people from entering and exceeding the occupancy, '+
-      'using Engineering Design principle to provide innovative solutions involving housing design and firmware developement with IoT.',
-    tags: [
-      {
-        name: 'firmware',
-        color: 'black-text-gradient',
-      },
-      {
-        name: 'c++',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'electrical',
-        color: 'yellow-text-gradient',
-      },
-    ],
+      'using Engineering Design principle to provide innovative solutions involving housing design and firmware developement with IoT',
     image: room,
     repo: 'https://github.com/preespp/Room-Occupancy-Monitor',
     demo: 'https://docs.google.com/presentation/d/17KSI3MvRzxACOuaH1sUANS8LFsj9wH_Ykx2ariXAGmU/edit?usp=drive_link',
   },
   {
-    id: 'project-3',
+    id: 'project-2',
     name: 'Mar Rovers',
-    description: 'Under BU Mars Rover Club, we built to rover to University Rover Challenge in Utah,'+
+    description: 'Under BU Mars Rover Club, we built to rover to University Rover Challenge in Utah, '+
     'I am in Software, Robotics, and Electrical subteam developing firmware with NVIDIA Jetson for GPS and Dynamixel motors for Robotics Arm'+
-    'And, this year, I am Electrical Deputy Lead.',
-    tags: [
-    ],
+    'And, I was Electrical Lead during Jan - May 2025',
     image: mrc,
     repo: 'https://github.com/BUMRC',
     demo: 'https://www.youtube.com/watch?v=yFyZpHNn1oE&t=18s',
   },
   {
-    id: 'project-4',
+    id: 'project-3',
     name: 'Coin Collector Robot',
     description: '1-week BU Hardware Robotics Hackathon, challenge to build robot with mechanism to collect thin small magnetic coins and compete to score in the limited time; awarded 1st place with one round of sweep the arena',
-    tags: [
-    ],
     image: robot_hack,
-    repo: '',
     demo: 'https://drive.google.com/file/d/1wlkO68M9oYhH6aIRdplqJJEwUHvWy3Ty/view?usp=drive_link',
   },
   {
+    id: 'project-4',
+    name: 'Robotics Arm Manipulation System',
+    description: `An open source for low-cost robotics manipulation system integrating real-time object detection (YOLOv8) with multi-camera visual input and LeRobot-controlled 6-DOF arms from HuggingFace`,
+    image: hface,
+    repo: 'https://github.com/preespp/augment-robot-arm-yolo-vla',
+    demo: 'https://www.youtube.com/watch?v=-n9ZhXqO-Go',
+  },
+];
+
+const projects2 = [
+  {
     id: 'project-5',
-    name: 'Whack-a-Mole FPGA',
-    description: `Game Development on FPGA firmware development with Verilog HDL, integrating timer and external tools such as VGA, keyboard and mouse on Digital Logic Design concepts`,
-    tags: [
-    ],
+    name: 'Desktop Application for business',
+    description: 'An inventory management tool (Desktop Application) aimed to assist small retail businesses powered by Nodejs, Electronjs, Python, HTML/CSS, JavaScript, Mongodb',
+    image: inventory,
+    repo: 'https://github.com/preespp/Inventory_Optimizer',
+    demo: 'https://www.youtube.com/watch?v=NPsZ9VrNPgQ',
+  },
+  {
+    id: 'project-6',
+    name: 'Embedded Systems Development',
+    description:
+      'A custom Linux distribution for the BeagleBone Black (ARMv7), including compiling the Linux kernel, configuring BusyBox, and emulating using QEMU'+
+      ', and kernel-level traffic light control system ',
+    image: penguin,
+    repo: 'https://github.com/preespp/Embedded-Systems-Lab-HW',
+    demo: 'https://drive.google.com/file/d/1kwGrEP8c6AS66bYDmtlPtbsgqo9t-cVz/view',
+  },  
+  {
+    id: 'project-7',
+    name: 'MIPS Pipeline Processor',
+    description: 'A 5-stage pipelined CPU in HDL, incorporating hazard detection mechanisms to ensure smooth instruction flow and mitigate data hazards',
+    image: mips,
+    repo: 'https://github.com/preespp/Computer-Organization-Lab',
+  },
+  {
+    id: 'project-8',
+    name: 'Whack-a-Mole on FPGA',
+    description: `Game Development on FPGA with Verilog HDL, integrating timer and external tools such as VGA, keyboard and mouse on Digital Logic Design concepts`,
     image: fpga,
     repo: 'https://github.com/preespp/EC311-Logic-Design-Final-Project',
     demo: 'https://youtu.be/xJwtOaYMmew?si=ZioFx-ER5Zgv4R0E',
   },
+
 ];
 
-export { services, technologies, experiences, educations, projects };
+export { services, technologies, experiences, educations, projects, projects2, courseworks, certificate };

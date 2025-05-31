@@ -4,7 +4,7 @@ import whiteabstract from './backgrounds/white-abstract.png';
 
 import logo from './logo/pree_logo.png';
 
-// import pree from './personal/pree.png';
+import pree from './personal/pree.png';
 import bu from './school/bu.png';
 import ba from './school/ba.png';
 import pds from './school/pds.png';
@@ -50,6 +50,7 @@ import reactjs from './tech/reactjs.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 
+import pttep from './company/pttep.png';
 import bumrc from './company/bumrc.png';
 import bot from './company/bot.png';
 import bueng from './company/bueng.png';
@@ -60,13 +61,16 @@ import room from './projects/RoomBox2.png';
 import mrc from './projects/Rover.png';
 import robot_hack from './projects/HackRobot.png'
 import fpga from './projects/FPGA.png';
+import hface from './projects/huggingface.png';
+import mips from './projects/mips.png';
+import penguin from './projects/embedded.png';
 
 export {
   bg_pree,
   nairobi,
   whiteabstract,
   logo,
-  // pree,
+  pree,
   robot,
   embed,
   bu,
@@ -110,6 +114,7 @@ export {
   tailwind,
   typescript,
   bumrc,
+  pttep,
   bot,
   bueng,
   atsa,
@@ -118,4 +123,7 @@ export {
   mrc,
   fpga,
   robot_hack,
+  hface,
+  penguin,
+  mips,
 };

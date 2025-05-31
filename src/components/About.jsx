@@ -37,10 +37,10 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-         I have a strong background in Software Development (Embedded Systems, Full-stack, Networking), Hardware Designs, Robotics & AI. I am falling in love with Engineering with
-         the passion to become engineer who integrates various systems together, apply multidisciplinary knowledge and tackle the challenges to improve products/projects. 
-         While being experts in software, my background in mechanical and electrical would provide sufficient knowledge to consider all constraints before deploying final products.
-         Even though I am most interested in Technology, Robotics and Automotive industies, I am open to new fields as I believe I can do several things, tackling challenges and expanding new horizons.
+        <p>I have a strong background in Software Development, Embedded Systems, Robotics & AI. I am falling in love with Engineering with
+        the passion to become engineer who integrates various systems together, apply multidisciplinary knowledge and tackle the challenges to improve products/projects.</p>
+        <p>While being experts in software, my background in mechanical and electrical would provide sufficient knowledge to consider all constraints before deploying final products.
+        Even though I am most interested in Technology, Robotics and Automotive industies, I am open to new fields as I believe I can do several things, tackling challenges and expanding new horizons.</p>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
