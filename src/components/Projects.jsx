@@ -129,7 +129,7 @@ const Projects = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+          className="mt-4 text-taupe text-[18px] leading-[30px]">
           These projects reflected how I would like to contribute my engineering skills to real-world applications in Robotics, Smart Device, and Software Development.
           Below are sample of 8 projects that I have tackled as an individual and as a team. 
           Feel free to check out other projects by clicking View All Projects button below.

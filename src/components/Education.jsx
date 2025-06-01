@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -80,30 +80,120 @@ const EducationCard = ({ education }) => {
   );
 };
 
-const CourseworksCard = ({courseworks}) => {
-  const [detailsVisible, setDetailsVisible] = useState(false);
+const CourseworksCard = ({ coursework }) => {
+  const [index, setIndex] = useState(0);
 
-  const toggleDetails = () => {
-    setDetailsVisible(!detailsVisible);
+  const next = () => {
+    setIndex((prev) => (prev === coursework.length - 1 ? 0 : prev + 1));
+  };
+
+  const prev = () => {
+    setIndex((prev) => (prev === 0 ? coursework.length - 1 : prev - 1));
   };
 
   return (
-    <VerticalTimelineElement>
-    </VerticalTimelineElement>
+    <div className="relative w-full max-w-4xl mx-auto h-[400px] flex items-center justify-center overflow-hidden">
+      <button
+        onClick={prev}
+        className="absolute left-0 z-10 bg-white text-gray-800 border border-gray-300 rounded-full p-3 shadow hover:scale-110 transition"
+      >
+        ‹
+      </button>
+      <div className="relative w-full h-full flex items-center justify-center">
+        {coursework.map((course, i) => {
+          const offset = i - index;
+          const isActive = i === index;
+
+          return (
+            <motion.div
+              key={i}
+              className="bg-white bg-opacity-30 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-sm absolute w-[300px] h-[350px] bg-blue-100 rounded-xl shadow-xl p-6"
+              style={{
+                backgroundImage: `url(${course.bg})`,
+                backgroundSize: '100% 100%',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                zIndex: coursework.length - Math.abs(offset),
+                scale: isActive ? 1 : 0.9,
+              }}
+              animate={{
+                opacity: Math.abs(offset) > 3 ? 0 : 1,
+                x: offset * 90,
+                scale: isActive ? 1 : 0.95,
+                zIndex: coursework.length - Math.abs(offset),
+              }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            >
+              <div className="bg-white bg-opacity-90 p-4 h-full flex flex-col justify-center">
+                <h3 className="text-lg text-gray-800 font-bold text-center mb-2">{course.type}</h3>
+                <ul className="text-sm text-gray-700 list-disc list-inside">
+                  {course.lists.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+                <a className="text-sm text-gray-700 list-disc list-inside" href="http://www.freepik.com">*Background Designed by Freepik</a>
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
+      <button
+        onClick={next}
+        className="absolute right-0 z-10 bg-white text-gray-800 border border-gray-300 rounded-full p-3 shadow hover:scale-110 transition"
+      >
+        ›
+      </button>
+    </div>
   );
 };
 
-const CertificateCard = ({certificate}) => {
-  const [detailsVisible, setDetailsVisible] = useState(false);
+const CertificateCard = ({ certificates }) => {
+  const [index, setIndex] = useState(0);
 
-  const toggleDetails = () => {
-    setDetailsVisible(!detailsVisible);
+  const prev = () => {
+    setIndex((prev) => (prev === 0 ? certificates.length - 1 : prev - 1));
+  };
+
+  const next = () => {
+    setIndex((prev) => (prev === certificates.length - 1 ? 0 : prev + 1));
   };
 
   return (
-    <VerticalTimelineElement>
-    </VerticalTimelineElement>
+    <div className="relative w-full max-w-xl mx-auto p-4 group">
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -50 }}
+        transition={{ duration: 0.5 }}
+        className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center justify-center relative overflow-hidden"
+      >
+        <img
+          src={certificates[index].photo}
+          alt={certificates[index].name}
+          className="w-full h-auto object-contain mb-4 rounded-md"
+        />
+  
+        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <h1 className="text-white text-lg font-semibold text-center px-4">
+            {certificates[index].name}
+          </h1>
+        </div>
+  
+        <div className="text-center mt-2 text-sm text-gray-500">
+          {index + 1} / {certificates.length}
+        </div>
+      </motion.div>
+  
+      <div className="absolute top-1/2 transform -translate-y-1/2 left-0">
+        <button onClick={prev} className="text-2xl px-3 text-gray-700 hover:text-black">‹</button>
+      </div>
+      <div className="absolute top-1/2 transform -translate-y-1/2 right-0">
+        <button onClick={next} className="text-2xl px-3 text-gray-700 hover:text-black">›</button>
+      </div>
+    </div>
   );
+  
 };
 
 const Education = () => {
@@ -122,10 +212,20 @@ const Education = () => {
         </VerticalTimeline>
       </div>
 
-      <div className="mt-20 flex flex-col">
-      </div>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Coursework</p>
+      </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-10">
+        <CourseworksCard coursework={courseworks} />
+      </div>
+      
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Learning Outside School</p>
+      </motion.div>
+
+      <div className="mt-10">
+          <CertificateCard certificates={certificate} />
       </div>
     </>
   );

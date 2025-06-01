@@ -9,6 +9,15 @@ import bu from './school/bu.png';
 import ba from './school/ba.png';
 import pds from './school/pds.png';
 import tu from './school/tu.png';
+import hard from './school/hardware.jpg';
+import soft from './school/software.jpg';
+import mech from './school/mechanical.jpg';
+import stem from './school/stem.jpg';
+import agile from './school/agile.png';
+import docker2 from './school/docker.png';
+import ds from './school/ds.png';
+import superai from './school/superai.png';
+import syseng from './school/syseng.png';
 
 import robot from './icons/robot_ai.png';
 import embed from './icons/embedded.png';
@@ -126,4 +135,13 @@ export {
   hface,
   penguin,
   mips,
+  stem,
+  mech,
+  soft,
+  hard,
+  agile,
+  docker2,
+  ds,
+  superai,
+  syseng,
 };

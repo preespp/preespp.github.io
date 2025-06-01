@@ -25,7 +25,7 @@ const Tech = () => {
         <h2 className={styles.sectionHeadTextLight}>Hardware/Tools</h2>
       </motion.div>
 
-      <div className="flex-wrap flex mt-14 text-taupe text-[18px] max-w-3xl leading-[30px]">
+      <div className="flex-wrap flex mt-14 text-taupe text-[18px] leading-[30px]">
         <li>Embedded Boards: Beaglebone Black, ESP32, FPGA (Nexys Artix-7), Raspberry Pi, NVIDIA Jetson (Nano and AGX Orin), Arduino (Mirco, Nano, Uno)</li>
         <li>Embedded Systems: Verilog, Assembly Language, RTOS, Kernal Modules, Device Driver, Operating Systems, Profiling, Distributed Systems, Expressif IoT, I2C, TCP/IP, UART, UDP, LiDAR, IR Sensor, GPS, Motor Driver </li>
         <li>Software Tools: Shell, Linux, Ubuntu, Wireshark, Python sockets, Mininet, OpenFlow, ROS2, gprof, GDB, Unittest, MongoDB, MySQL, Google Firebase, Matplotlib, Scikit-learn</li>  

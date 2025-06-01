@@ -43,7 +43,16 @@ import {
   pttep,
   hface,
   mips,
-  penguin
+  penguin,
+  soft,
+  hard,
+  mech,
+  stem,
+  agile,
+  docker2,
+  ds,
+  superai,
+  syseng,
 } from '../assets';
 
 export const navLinks = [
@@ -71,11 +80,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Software Development',
+    title: 'Software',
     icon: backend,
   },
   {
-    title: 'Firmware Development',
+    title: 'Firmware',
     icon: embed,
   },
   {
@@ -230,22 +239,46 @@ const educations = [
 const courseworks = [
   {
     type: 'Hardware',
-    lists: ['Embedded Systems', 'Smart and Connected Systems', 'Computer Organization', 'Logic Design', 'Electric Circuits'],
+    lists: ['Embedded Systems', 'Smart and Connected Systems', 'Computer Organization', 'Logic Design', 'Electric Circuits',],
+    bg: hard,
   },
   {
     type: 'Software',
-    lists: ['Operating Systems', 'Cloud Computing', 'Machine Learning', 'Computer Networking','Software Engineering', 'Applied Algorithms for Engineers'],
+    lists: ['Operating Systems', 'Cloud Computing', 'Machine Learning', 'Computer Networking', 'Software Engineering', 'Applied Algorithms for Engineers', 'Computer Programming for Engineers', 'Python for Engineer & Data Science',],
+    bg: soft,
   },
   {
     type: 'Mechanical',
-    lists: ['Robotics',  'Mechanics I (Static)', 'Mechanics II (Dynamics+Kinematics)', 'Supply Chain Engineering', 'Engineering Design', 'Engineering Hands-on'],
+    lists: ['Robotics',  'Mechanics I (Static)', 'Mechanics II (Dynamics+Kinematics)', 'Supply Chain Engineering', 'Engineering Design', 'Engineering Hands-on', ],
+    bg: mech,
+  },
+  {
+    type: 'STEM',
+    lists: ['Probability, Statistics & Data Science', 'Differential Equations', 'Multivariate Calculus', 'Discrete Mathematics for Engineers', 'Computational Linear Algebra', 'Physics II', 'Macroeconomics', 'Microeconomics',],
+    bg: stem,
   },
 ];
 
 const certificate = [
   {
-    name: '',
-    photo: ''
+    name: 'IBM: Data Science Professional Certificate, Aug 2023',
+    photo: ds
+  },
+  {
+    name: 'Artificial Intelligence Association of Thailand: Artificial Intelligence Examination, Feb 2024',
+    photo: superai
+  },
+  {
+    name: 'Mathworks: System Engineering, Jan 2025',
+    photo: syseng
+  },
+  {
+    name: 'Google Cloud: Docker, May 2025',
+    photo: docker2
+  },
+  {
+    name: 'Google: Agile Project Management, May 2025',
+    photo: agile
   },
 ];
 
