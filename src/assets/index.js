@@ -18,6 +18,9 @@ import docker2 from './school/docker.png';
 import ds from './school/ds.png';
 import superai from './school/superai.png';
 import syseng from './school/syseng.png';
+import jj from './school/jj.png';
+import aws from './school/aws.png';
+import invest from './school/invest.png';
 
 import robot from './icons/robot_ai.png';
 import embed from './icons/embedded.png';
@@ -144,4 +147,7 @@ export {
   ds,
   superai,
   syseng,
+  jj,
+  invest,
+  aws,
 };

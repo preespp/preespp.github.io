@@ -53,6 +53,9 @@ import {
   ds,
   superai,
   syseng,
+  jj,
+  invest,
+  aws
 } from '../assets';
 
 export const navLinks = [
@@ -261,16 +264,12 @@ const courseworks = [
 
 const certificate = [
   {
-    name: 'IBM: Data Science Professional Certificate, Aug 2023',
-    photo: ds
+    name: 'AWS: Software Development Practices, Jul 2025',
+    photo: aws
   },
   {
-    name: 'Artificial Intelligence Association of Thailand: Artificial Intelligence Examination, Feb 2024',
-    photo: superai
-  },
-  {
-    name: 'Mathworks: System Engineering, Jan 2025',
-    photo: syseng
+    name: 'Johnson & Johnson MedTech: Robotics & Controls, Jul 2025',
+    photo: jj
   },
   {
     name: 'Google Cloud: Docker, May 2025',
@@ -279,6 +278,22 @@ const certificate = [
   {
     name: 'Google: Agile Project Management, May 2025',
     photo: agile
+  },
+  {
+    name: 'Mathworks: System Engineering, Jan 2025',
+    photo: syseng
+  },
+  {
+    name: 'Artificial Intelligence Association of Thailand: Artificial Intelligence Examination, Feb 2024',
+    photo: superai
+  },
+  {
+    name: 'IBM: Data Science Professional Certificate, Aug 2023',
+    photo: ds
+  },
+    {
+    name: 'UIUC: Investment and Building Wealth, Jul 2025',
+    photo: invest
   },
 ];
 
@@ -289,7 +304,11 @@ const experiences = [
     icon: pttep,
     iconBg: '#333333',
     date: 'May 2025 - Jul 2025',
-    details: ['incoming',],
+    details: ['Developed a multi-agent AI system leveraging OCR, Google Gemini, and Vertex AI to automate complex shoreline documents reading, summarizing, splitting, and metadata generation for a centralized data center, potentially saving the cost of outsourcing human effort over $7M for 1.5M documents (78%)',
+      'Built multiple frontend interfaces for user interaction with a Flask web application with a RESTful API, HTML/CSS/JavaScript',
+      'Engineered a multithreaded task execution layer using ThreadPoolExecutor to parallelize tasks across CPU cores, optimizing system resources and tokens, and speeding up processing time by 82%',
+      'Researched and implemented performance enhancements for LLMs, such as few-shot learning and prompt engineering, with a focus on Retrieval-Augmented Generation (RAG), leveraging FAISS and designing custom retrieval pipelines',
+      'Developed a Robotic Process Automation using Python, SharePoint API, and Selenium to scrape, download, and upload documents from/to a secure server, reducing the complexity and time of workflow by 75%'],
   },
   {
     title: 'Robotics Researcher',
