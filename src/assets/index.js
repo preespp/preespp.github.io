@@ -1,6 +1,4 @@
 import bg_pree from './backgrounds/Pree_Background.png';
-import nairobi from './backgrounds/nairobi.png';
-import whiteabstract from './backgrounds/white-abstract.png';
 
 import logo from './logo/pree_logo.png';
 
@@ -21,6 +19,8 @@ import syseng from './school/syseng.png';
 import jj from './school/jj.png';
 import aws from './school/aws.png';
 import invest from './school/invest.png';
+import startup from './school/startup.png';
+import tbp from './school/TBP.png';
 
 import robot from './icons/robot_ai.png';
 import embed from './icons/embedded.png';
@@ -37,50 +37,37 @@ import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
 
-import bootstrap from './tech/bootstrap.svg';
 import c from './tech/c.png';
 import cplusplus from './tech/cplusplus.png';
-import electronjs from './tech/electronjs.svg';
 import matlab from './tech/matlab.svg';
-import matplotlib from './tech/matplotlib.svg';
-import mongodb from './tech/mongodb.svg';
-import mysql from './tech/mysql.png';
 import numpy from './tech/numpy.svg';
 import opencv from './tech/opencv.svg';
 import python from './tech/python.svg';
-import pandas from './tech/pandas.svg';
 import pytorch from './tech/pytorch.png';
 import ros from './tech/ros.png';
-import scikit from './tech/scikit-learn.svg';
-import css from './tech/css.svg';
+import sql from './tech/sql.png';
 import docker from './tech/docker.png';
 import git from './tech/git.png';
-import html from './tech/html.svg';
 import javascript from './tech/js.svg';
 import nodejs from './tech/nodejs.svg';
 import reactjs from './tech/reactjs.png';
 import tailwind from './tech/tailwind.png';
-import typescript from './tech/typescript.png';
 
 import pttep from './company/pttep.png';
-import bumrc from './company/bumrc.png';
 import bot from './company/bot.png';
 import bueng from './company/bueng.png';
-import atsa from './company/atsa.png'
 
 import inventory from './projects/Dashboard.png';
-import room from './projects/RoomBox2.png';
+import gofr from './projects/gofr.png';
 import mrc from './projects/Rover.png';
-import robot_hack from './projects/HackRobot.png'
+import alice from './projects/alice.png';
 import fpga from './projects/FPGA.png';
-import hface from './projects/huggingface.png';
-import mips from './projects/mips.png';
+import ncrc from './projects/ncrc.png';
+import ibm from './projects/ibm.png';
 import penguin from './projects/embedded.png';
 
 export {
   bg_pree,
-  nairobi,
-  whiteabstract,
   logo,
   pree,
   robot,
@@ -91,21 +78,15 @@ export {
   pds,
   backend,
   networking,
-  bootstrap,
   c,
   cplusplus,
-  electronjs,
   matlab,
-  matplotlib,
-  mongodb,
-  mysql,
   numpy,
   opencv,
   python,
-  pandas,
   pytorch,
   ros,
-  scikit,
+  sql,
   github,
   close,
   download,
@@ -116,28 +97,23 @@ export {
   resume,
   send,
   sendHover,
-  css,
   docker,
   git,
-  html,
   javascript,
   nodejs,
   reactjs,
   tailwind,
-  typescript,
-  bumrc,
   pttep,
   bot,
   bueng,
-  atsa,
   inventory,
-  room,
+  gofr,
   mrc,
   fpga,
-  robot_hack,
-  hface,
+  alice,
+  ncrc,
+  ibm,
   penguin,
-  mips,
   stem,
   mech,
   soft,
@@ -150,4 +126,6 @@ export {
   jj,
   invest,
   aws,
+  startup,
+  tbp
 };

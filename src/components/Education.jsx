@@ -8,7 +8,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { educations, courseworks, certificate} from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const EducationCard = ({ education }) => {

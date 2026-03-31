@@ -6,9 +6,6 @@ import {
   backend,
   networking,
   javascript,
-  typescript,
-  html,
-  css,
   reactjs,
   tailwind,
   nodejs,
@@ -16,33 +13,25 @@ import {
   docker,
   robot,
   embed,
-  bootstrap,
   c,
   cplusplus,
-  electronjs,
   matlab,
-  matplotlib,
-  mongodb,
-  mysql,
   numpy,
   opencv,
   python,
-  pandas,
   pytorch,
   ros,
-  scikit,
-  bumrc,
+  sql,
   bot,
   bueng,
-  atsa,
   inventory,
-  room,
+  gofr,
   mrc,
   fpga,
-  robot_hack,
+  alice,
   pttep,
-  hface,
-  mips,
+  ncrc,
+  ibm,
   penguin,
   soft,
   hard,
@@ -55,7 +44,9 @@ import {
   syseng,
   jj,
   invest,
-  aws
+  aws,
+  startup,
+  tbp,
 } from '../assets';
 
 export const navLinks = [
@@ -95,7 +86,7 @@ const services = [
     icon: robot,
   },
   {
-    title: 'Computer Networking',
+    title: 'Integration',
     icon: networking,
   },
 ];
@@ -121,14 +112,6 @@ const technologies = [
     name: 'ROS',
     icon: ros,
   },
-  // {
-  //   name: 'HTML 5',
-  //   icon: html,
-  // },
-  // {
-  //   name: 'CSS 3',
-  //   icon: css,
-  // },
   {
     name: 'JavaScript',
     icon: javascript,
@@ -138,8 +121,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Electron JS',
-    icon: electronjs,
+    name: 'SQL',
+    icon: sql,
   },
   {
     name: 'Node JS',
@@ -242,7 +225,7 @@ const educations = [
 const courseworks = [
   {
     type: 'Hardware',
-    lists: ['Embedded Systems', 'Smart and Connected Systems', 'Computer Organization', 'Logic Design', 'Electric Circuits',],
+    lists: ['Embedded Systems', 'Smart and Connected Systems', 'Control Systems', 'Computer Organization', 'Logic Design', 'Electric Circuits',],
     bg: hard,
   },
   {
@@ -252,7 +235,7 @@ const courseworks = [
   },
   {
     type: 'Mechanical',
-    lists: ['Robotics',  'Mechanics I (Static)', 'Mechanics II (Dynamics+Kinematics)', 'Supply Chain Engineering', 'Engineering Design', 'Engineering Hands-on', ],
+    lists: ['Robotics',  'Mechanics I (Static)', 'Mechanics II (Dynamics+Kinematics)', 'Energy & Thermodynamics', 'Supply Chain Engineering', 'Engineering Design', 'Engineering Hands-on', ],
     bg: mech,
   },
   {
@@ -263,6 +246,14 @@ const courseworks = [
 ];
 
 const certificate = [
+  {
+    name: 'UPenn: Entrepreneurship 2, Aug 2025',
+    photo: startup
+  },
+  {
+    name: 'UIUC: Investment and Building Wealth, Jul 2025',
+    photo: invest
+  },
   {
     name: 'AWS: Software Development Practices, Jul 2025',
     photo: aws
@@ -284,6 +275,10 @@ const certificate = [
     photo: syseng
   },
   {
+    name: 'Tau Beta Pi: Engineering Honor Society, Nov 2024',
+    photo: tbp
+  },
+  {
     name: 'Artificial Intelligence Association of Thailand: Artificial Intelligence Examination, Feb 2024',
     photo: superai
   },
@@ -291,13 +286,31 @@ const certificate = [
     name: 'IBM: Data Science Professional Certificate, Aug 2023',
     photo: ds
   },
-    {
-    name: 'UIUC: Investment and Building Wealth, Jul 2025',
-    photo: invest
-  },
 ];
 
 const experiences = [
+  {
+    title: 'Teaching Assistant',
+    company_name: 'BU College of Engineering',
+    icon: bueng,
+    iconBg: '#333333',
+    date: 'Jan 2026 - May 2026',
+    details: ['ENG EC 444 Smart and Connected Systems; Professor Eshed Ohn-Bar (Spring 2026)',
+      'Assisted and provide support to students during lectures and labs with embedded and smart connected systems, including microcontrollers, real-time OS concepts, IoT fundamentals, low-level firmware and hardware integration issues (e.g., ESP-IDF, sensor interfacing, I²C/SPI/UART).'
+    ],
+  },
+  {
+    title: 'Researcher',
+    company_name: 'Multimedia Communication Laboratory',
+    icon: bueng,
+    iconBg: '#333333',
+    date: 'Oct 2025 - Jan 2026',
+    details: ['Multimedia Communication Lab, Professor Thomas Little, UROP Fall 2025',
+      'High accuracy vehicular positioning with Ultra-Wideband localization and LiDAR',
+      'Research about the sensor fusion between Ultra-Wideband and LiDAR for indoor positioning using an Autonomous Vehicle as a testbed',
+      'Developed a C++ script with ROS2 for control of an autonomous vehicle and sensor fusion in NVIDIA Jetson Nano'
+    ],
+  },
   {
     title: 'Software Engineer Intern',
     company_name: 'PTT Exploration and Production Public Company Limited (PTTEP)',
@@ -325,19 +338,6 @@ const experiences = [
     'Researched on LIDAR camera to visualize data on Matplotlib and prepare data collection for Deep Learning model training'],
   },
   {
-    title: 'Teaching Assistant',
-    company_name: 'BU College of Engineering',
-    icon: bueng,
-    iconBg: '#333333',
-    date: 'Jan 2024 - Dec 2024',
-    details: ['ENG EK 131 Engineering: Hands-on; Professor Ousama A`amar, Professor Christine Mulvey, Professor Kenneth Sebesta',
-    'Instructed over 400 students during lectures and office hours in CAD, Product Assembly, Product Design, 3D Printing, Circuit, Microcontroller Programming, Machining and Mechanical Drawing',
-    'Hosted 3-hour weekly office hour to provide guidance students in weekly assignment, CAD, Product Design, 3D Printing, Microcontroller Programming, Machining and Mechanical Drawing, circuit wiring and final product assembly',
-    'Provided technical support and troubleshooting expertise for 3D printers and Engineering tools in the workspace, contributing to a seamless learning experience in engineering disciplines',
-    'ENG EK 301: Engineering Mechanics; Professor Scott Bunch',
-    'Graded weekly assignments and quizzes on Mechanics Statics ranging from Vectors, Truss Analysis, Distributed Forces, Static Equilibrium, Frames, Shear/Bending, and Virtual Work'],
-  },
-  {
     title: 'Software Engineer Intern',
     company_name: 'Bank of Thailand Note Printing Works',
     icon: bot,
@@ -348,18 +348,29 @@ const experiences = [
     'Researched process engineering and AGV, applying Lean Manufacturing for new Industrial Plant Planning, and optimizing the production storage with a 200% increase, designing the Robot Path Planning that will increase product transfer by 33.28%',
     'Assisting Senior Engineer in process flows and training sessions for new machinery, bridging language barriers between German instructors from the vendor and Thai technicians'],
   },
+  {
+    title: 'Teaching Assistant',
+    company_name: 'BU College of Engineering',
+    icon: bueng,
+    iconBg: '#333333',
+    date: 'Jan 2024 - May 2024',
+    details: [
+      'ENG EK 131 Engineering: Hands-on; Professor Ousama A`amar, Professor Christine Mulvey, Professor Kenneth Sebesta',
+      'Instructed over 400 students during lectures and office hours in CAD, Product Assembly, Product Design, 3D Printing, Circuit, Microcontroller Programming, Machining and Mechanical Drawing',
+      'Hosted 3-hour weekly office hour to provide guidance students in weekly assignment, CAD, Product Design, 3D Printing, Microcontroller Programming, Machining and Mechanical Drawing, circuit wiring and final product assembly',
+      'Provided technical support and troubleshooting expertise for 3D printers and Engineering tools in the workspace, contributing to a seamless learning experience in engineering disciplines',
+    ],
+  },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'Room Occupancy Monitor',
+    name: 'GOFR: Grocery Operational Fulfillment Robot (SICK $10K Challenge 2025-26 Finalist)',
     description:
-      'A device to monitor number of people and actutate mechanical system to prevent more people from entering and exceeding the occupancy, '+
-      'using Engineering Design principle to provide innovative solutions involving housing design and firmware developement with IoT',
-    image: room,
-    repo: 'https://github.com/preespp/Room-Occupancy-Monitor',
-    demo: 'https://docs.google.com/presentation/d/17KSI3MvRzxACOuaH1sUANS8LFsj9wH_Ykx2ariXAGmU/edit?usp=drive_link',
+      'An autonomous grocery-assistance robot that combines AI, perception, and robotic manipulation to support store restocking and customer shopping. I contributed to the system architecture, ROS2-based autonomy, full-stack order workflows, and hardware-software integration across sensing and arm control.',
+    image: gofr,
+    repo: 'https://github.com/preespp/EC463_Team_21_Grocery_Robot',
   },
   {
     id: 'project-2',
@@ -373,16 +384,19 @@ const projects = [
   },
   {
     id: 'project-3',
-    name: 'Coin Collector Robot',
-    description: '1-week BU Hardware Robotics Hackathon, challenge to build robot with mechanism to collect thin small magnetic coins and compete to score in the limited time; awarded 1st place with one round of sweep the arena',
-    image: robot_hack,
-    demo: 'https://drive.google.com/file/d/1wlkO68M9oYhH6aIRdplqJJEwUHvWy3Ty/view?usp=drive_link',
+    name: 'ALICE: AI Life Improvement & Care Expert (MakeMIT x Harvard 2026) ',
+    description: 'A local-first AI smart pill dispenser designed to help people manage multiple medications safely at home. '+
+    'ALICE combines face recognition, guided dispensing, and contextual health support in a more private and practical home-care device.'+
+    'I was responsible for Backend API development, API research and Gemini API development along with low-level hardware integration with ESP32 and optimization for real-time performance.',
+    image: alice,
+    repo: 'https://github.com/preespp/MakeMIT_2026_Team7',
+    demo: 'https://devpost.com/software/smart-ai-medical-home-device-something?_gl=1*ljrr9p*_gcl_au*MTgwMzIwMjMwMS4xNzcxNzE5NzY3*_ga*MTUwNzk4MzYzNS4xNzcxNzE5NzY3*_ga_0YHJK3Y10M*czE3NzQ5MjU5NDQkbzkkZzEkdDE3NzQ5MjU5NjAkajQ0JGwwJGgw',
   },
   {
     id: 'project-4',
-    name: 'Robotics Arm Manipulation System',
-    description: `An open source for low-cost robotics manipulation system integrating real-time object detection (YOLOv8) with multi-camera visual input and LeRobot-controlled 6-DOF arms from HuggingFace`,
-    image: hface,
+    name: 'Robotics Arm Manipulation System (NCRC 2026 at Harvard University)',
+    description: 'An open-source low-cost robotic manipulation platform that combines real-time object detection, multi-camera perception, and 6-DOF arm control. This work led to a paper accepted to the National Collegiate Research Conference (NCRC) 2026 at Harvard University.',
+    image: ncrc,
     repo: 'https://github.com/preespp/augment-robot-arm-yolo-vla',
     demo: 'https://www.youtube.com/watch?v=-n9ZhXqO-Go',
   },
@@ -391,7 +405,7 @@ const projects = [
 const projects2 = [
   {
     id: 'project-5',
-    name: 'Desktop Application for business',
+    name: 'Desktop Application for small business retail',
     description: 'An inventory management tool (Desktop Application) aimed to assist small retail businesses powered by Nodejs, Electronjs, Python, HTML/CSS, JavaScript, Mongodb',
     image: inventory,
     repo: 'https://github.com/preespp/Inventory_Optimizer',
@@ -409,10 +423,12 @@ const projects2 = [
   },  
   {
     id: 'project-7',
-    name: 'MIPS Pipeline Processor',
-    description: 'A 5-stage pipelined CPU in HDL, incorporating hazard detection mechanisms to ensure smooth instruction flow and mitigate data hazards',
-    image: mips,
-    repo: 'https://github.com/preespp/Computer-Organization-Lab',
+    name: 'Extending Site Reliability Engineering Fault Mechanisms within ITBench',
+    description: 'This project is under IBM Engineers Mentorship.'+
+    'An open-source research project focused on making AI-agent benchmarking more realistic for site reliability engineering tasks. I helped extend ITBench with cloud-inspired fault scenarios for Kubernetes microservices using observability and infrastructure tools such as Docker, Prometheus, Jaeger, and OpenTelemetry.',
+    image: ibm,
+    repo: 'https://github.com/itbench-hub/ITBench-Scenarios',
+    demo: 'https://github.com/EC528-Fall-2025/XFault-ITBench',
   },
   {
     id: 'project-8',

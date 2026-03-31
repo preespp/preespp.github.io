@@ -35,12 +35,11 @@ const ProjectCard = ({
       />
 
       {active !== id ? (
-        <div className="flex items-center justify-start pr-[4.5rem]">
+        <div className="absolute inset-0 z-20 flex items-center justify-center overflow-hidden px-3 py-6">
           <h2
-            className="font-extrabold font-beckman uppercase w-[200px] h-[20px] 
-            whitespace-nowrap sm:text-[20px] text-[14px] text-timberWolf tracking-[1px]
-            absolute z-0 lg:bottom-[6rem] lg:rotate-[-90deg] lg:origin-[0,0]
-            leading-none z-20"
+            className="font-extrabold font-beckman uppercase lg:w-[360px] sm:w-[320px] w-[280px]
+            whitespace-normal break-words text-center sm:text-[20px] text-[14px] text-timberWolf tracking-[1px]
+            lg:rotate-[-90deg] leading-[1.1]"
           >
             {name}
           </h2>
@@ -161,7 +160,7 @@ const Projects = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className="mt-[18px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {projects2.map((project, index) => (
             <ProjectCard
               key={project.id}
