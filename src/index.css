@@ -51,17 +51,17 @@
   width: 70%;
 }
 
-#about {
+.mobile-nav-link-about {
   margin-left: -24px;
   font-size: 100px;
 }
 
-#projects {
+.mobile-nav-link-projects {
   margin-left: -2px;
   font-size: 100px;
 }
 
-#contact {
+.mobile-nav-link-contact {
   margin-left: -20px;
   font-size: 95px;
   letter-spacing: -2px;

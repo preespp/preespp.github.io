@@ -4,6 +4,12 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { close, menu, logo } from '../assets';
 
+const mobileNavClassById = {
+  about: 'mobile-nav-link-about',
+  projects: 'mobile-nav-link-projects',
+  contact: 'mobile-nav-link-contact',
+};
+
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
@@ -61,11 +67,10 @@ const Navbar = () => {
                 items-start justify-end mt-[10rem] -ml-[35px]">
                 {navLinks.map((nav) => (
                   <li
-                    id={nav.id}
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
+                    } ${mobileNavClassById[nav.id] ?? ''} text-[88px] font-bold font-arenq 
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
