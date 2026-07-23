@@ -4,6 +4,8 @@ import logo from './logo/pree_logo.png';
 
 import pree from './personal/pree.png';
 import bu from './school/bu.png';
+import ucb from './school/ucb.png';
+import cswa from './school/CSWA.png';
 import ba from './school/ba.png';
 import pds from './school/pds.png';
 import tu from './school/tu.png';
@@ -62,6 +64,8 @@ import gofr from './projects/gofr.png';
 import mrc from './projects/Rover.png';
 import alice from './projects/alice.png';
 import fpga from './projects/FPGA.png';
+import pendulum from './projects/pendulum.jpg';
+import linefollower from './projects/linefollower.png';
 import ncrc from './projects/ncrc.png';
 import ibm from './projects/ibm.png';
 import penguin from './projects/embedded.png';
@@ -73,6 +77,8 @@ export {
   robot,
   embed,
   bu,
+  ucb,
+  cswa,
   ba,
   tu,
   pds,
@@ -110,6 +116,8 @@ export {
   gofr,
   mrc,
   fpga,
+  pendulum,
+  linefollower,
   alice,
   ncrc,
   ibm,

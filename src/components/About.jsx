@@ -34,13 +34,6 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>My Spark in Engineering</h2>
       </motion.div>
 
-      {/* <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px]  leading-[30px]">
-        My passion for engineering didn't start in a classroom, but a movie. Watching Iron Man 3 as a 10-year-old kid, I was amazed by Tony Stark's ability to build advanced technology than we've ever imagined with his own hands
-        to build a super suit to save lives and Jarvis the A.I. to be his assitance in everyday basis. That vision of <span style={{ color: 'blue' }}>using engineering to shape the future of technology</span> stayed with me; it quietly sparked a curiosity I couldn't quite fully understand at the time.
-      </motion.p> */}
-
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px]  leading-[30px]">
@@ -64,13 +57,13 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px]  leading-[30px]">
         While being an expert in software, with my interdisciplinary background, I can bridge hardware and software to design, integrate and engineer end-to-end systems from embedded firmware to high-level autonomy.
-        Even though I am interested in <span style={{ color: 'blue' }}>Technology, Robotics and Automotive</span> industies, I am open to new fields as I believe I can do several things, tackle challenges and expand new horizons.
+        Even though I am interested in <span style={{ color: 'blue' }}>Technology, Robotics, Automotive and MedTech</span> industies, I am open to new fields as I believe I can do several things, tackle challenges and expand new horizons.
       </motion.p>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px]  leading-[30px]">
-        Now, I am a senior, major in Computer Engineering, minor in Mechanical Engineering and concentration in Robotics at Boston University.
+        Now, having completed my B.S. in Computer Engineering, with a minor in Mechanical Engineering and a concentration in Robotics at Boston University, I am pursuing my M.Eng. in Mechanical Engineering with a concentration in Control of Robotics and Autonomous Systems at UC Berkeley.
         I've already put my passion into action through my work in robotics research, software engineer internship, hardware hackathon, and various projects.
         These experiences have made me grow as an engineer and as a person.
         I am thrilled to dedicate my life as an engineer and look forward to the future opportunities to provide solution to <span style={{ color: 'blue' }}>improve people's life with software, robotics and autonomous systems</span> across all communities.

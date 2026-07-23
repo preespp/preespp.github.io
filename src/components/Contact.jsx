@@ -155,7 +155,7 @@ const Contact = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'https://www.linkedin.com/in/pree-simphliphan',
+                  'https://www.linkedin.com/in/pree-d',
                   '_blank'
                 )
               }

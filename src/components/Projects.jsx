@@ -136,10 +136,9 @@ const Projects = () => {
       </div>
 
       <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        variants={staggerContainer()}
+        initial="show"
+        animate="show"
         className={`${styles.innerWidth} mx-auto flex flex-col`}>
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {projects.map((project, index) => (
@@ -155,10 +154,9 @@ const Projects = () => {
       </motion.div>
 
       <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        variants={staggerContainer()}
+        initial="show"
+        animate="show"
         className={`${styles.innerWidth} mx-auto flex flex-col`}>
         <div className="mt-[18px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {projects2.map((project, index) => (

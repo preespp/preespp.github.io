@@ -1,5 +1,7 @@
 import {
   bu,
+  ucb,
+  cswa,
   ba,
   pds,
   tu,
@@ -24,19 +26,15 @@ import {
   sql,
   bot,
   bueng,
-  inventory,
   gofr,
   mrc,
-  fpga,
+  pendulum,
+  linefollower,
   alice,
   pttep,
   ncrc,
   ibm,
   penguin,
-  soft,
-  hard,
-  mech,
-  stem,
   agile,
   docker2,
   ds,
@@ -172,10 +170,21 @@ const technologies = [
 
 const educations = [
   {
+    school: 'University of California, Berkeley',
+    gpa: 'TBD',
+    degree: 'MEng Mechanical Engineering Concentration in Control of Robotics and Autonomous Systems',
+    // details: [''
+    // ],
+    icon: ucb,
+    iconBg: '#333333',
+    date: 'Aug 2026 - May 2027',
+  },
+  {
     school: 'Boston University',
-    gpa: '3.97/4.00',
+    gpa: '3.94/4.00',
     degree: 'BS Computer Engineering Minor in Mechanical Engineering Concentration in Robotics',
-    details: ['Tau Beta Pi: Engineering Honor Society',
+    details: [ 'Magna Cum Laude',
+    'Tau Beta Pi: Engineering Honor Society',
     'Dean`s List Every Semester',
     '1st place Robotics Hackathon 2025',
     '3rd place Hardware Hackathon 2023',
@@ -222,30 +231,11 @@ const educations = [
   },
 ];
 
-const courseworks = [
-  {
-    type: 'Hardware',
-    lists: ['Embedded Systems', 'Smart and Connected Systems', 'Control Systems', 'Computer Organization', 'Logic Design', 'Electric Circuits',],
-    bg: hard,
-  },
-  {
-    type: 'Software',
-    lists: ['Operating Systems', 'Cloud Computing', 'Machine Learning', 'Computer Networking', 'Software Engineering', 'Applied Algorithms for Engineers', 'Computer Programming for Engineers', 'Python for Engineer & Data Science',],
-    bg: soft,
-  },
-  {
-    type: 'Mechanical',
-    lists: ['Robotics',  'Mechanics I (Static)', 'Mechanics II (Dynamics+Kinematics)', 'Energy & Thermodynamics', 'Supply Chain Engineering', 'Engineering Design', 'Engineering Hands-on', ],
-    bg: mech,
-  },
-  {
-    type: 'STEM',
-    lists: ['Probability, Statistics & Data Science', 'Differential Equations', 'Multivariate Calculus', 'Discrete Mathematics for Engineers', 'Computational Linear Algebra', 'Physics II', 'Macroeconomics', 'Microeconomics',],
-    bg: stem,
-  },
-];
-
 const certificate = [
+  {
+    name: 'Dassault Systèmes: Certified SolidWorks Associate (CSWA)',
+    photo: cswa
+  },
   {
     name: 'UPenn: Entrepreneurship 2, Aug 2025',
     photo: startup
@@ -274,10 +264,10 @@ const certificate = [
     name: 'Mathworks: System Engineering, Jan 2025',
     photo: syseng
   },
-  {
-    name: 'Tau Beta Pi: Engineering Honor Society, Nov 2024',
-    photo: tbp
-  },
+  // {
+  //   name: 'Tau Beta Pi: Engineering Honor Society, Nov 2024',
+  //   photo: tbp
+  // },
   {
     name: 'Artificial Intelligence Association of Thailand: Artificial Intelligence Examination, Feb 2024',
     photo: superai
@@ -290,13 +280,29 @@ const certificate = [
 
 const experiences = [
   {
+    title: 'AI Engineer Intern',
+    company_name: 'Stealth-Stage Venture-Backed AI Startup in Cambridge, MA',
+    icon: robot,
+    iconBg: '#333333',
+    date: 'May 2026 - July 2026',
+    details: [
+      'Stealth, venture-backed startup, worked at the intersection of hardware-software co-design, building agentic AI and embedded tooling that applies autonomous software generation to Physical and Edge AI',
+      'Built and shipped modular, reusable Python agent skills enabling an AI agent to program and control embedded hardware, including Nordic PPK2 power profiling with GPIO read/write control on an FRDM-K64F target, and I²C tooling on Bus Pirate 6',
+      'Led end-to-end bring-up and control of an SO-101 robotic arm, trained and evaluated imitation-learning (ACT) policies with the open-source LeRobot framework, and then integrated trained policies into an agentic execution platform',
+      'Built automated tooling to measure device power consumption and evaluate power-optimization behavior; scaled the study across multiple local LLM models and prompt-usage patterns',
+      'Shipped code through a standard SWE workflow, feature branches, pull requests, and code review with multiple PRs merged into the production repository',
+      'Designed and ran live robotics demos for investors and prospective customers, produced/edited demo videos for external audiences',
+    ],
+  },
+  {
     title: 'Teaching Assistant',
     company_name: 'BU College of Engineering',
     icon: bueng,
     iconBg: '#333333',
     date: 'Jan 2026 - May 2026',
     details: ['ENG EC 444 Smart and Connected Systems; Professor Eshed Ohn-Bar (Spring 2026)',
-      'Assisted and provide support to students during lectures and labs with embedded and smart connected systems, including microcontrollers, real-time OS concepts, IoT fundamentals, low-level firmware and hardware integration issues (e.g., ESP-IDF, sensor interfacing, I²C/SPI/UART).'
+      'Assisted and provided support to students during lectures and labs with embedded and smart connected systems, including microcontrollers, real-time OS concepts, IoT fundamentals, low-level firmware, and hardware integration issues (e.g., ESP-IDF, sensor interfacing, I²C/SPI/UART)',
+      'Developed a Python-based script for student use with AgileX LIMO robot platforms, integrating control interfaces with IMU and LiDAR sensors, and enabling real-time communication via MQTT with Motion Capture (Motive) systems in RASTICs for coordinated localization and experimentation'
     ],
   },
   {
@@ -371,6 +377,7 @@ const projects = [
       'An autonomous grocery-assistance robot that combines AI, perception, and robotic manipulation to support store restocking and customer shopping. I contributed to the system architecture, ROS2-based autonomy, full-stack order workflows, and hardware-software integration across sensing and arm control.',
     image: gofr,
     repo: 'https://github.com/preespp/EC463_Team_21_Grocery_Robot',
+    demo: 'https://www.youtube.com/watch?v=yoCo3-0eruo',
   },
   {
     id: 'project-2',
@@ -384,6 +391,26 @@ const projects = [
   },
   {
     id: 'project-3',
+    name: 'Robotics Arm Manipulation System (NCRC 2026 at Harvard University)',
+    description: 'An open-source low-cost robotic manipulation platform that combines real-time object detection, multi-camera perception, and 6-DOF arm control. This work led to a paper accepted to the National Collegiate Research Conference (NCRC) 2026 at Harvard University.',
+    image: ncrc,
+    repo: 'https://github.com/preespp/augment-robot-arm-yolo-vla',
+    demo: 'https://www.youtube.com/watch?v=-n9ZhXqO-Go',
+  },
+  {
+    id: 'project-4',
+    name: 'Inverted Pendulum Stability Using Linear Motion (Control Systems)',
+    description:
+      'A Python simulation framework for stabilizing an inverted pendulum on a cart: PID stabilization and energy-based swing-up control across both linearized and nonlinear dynamics, with fourth-order Runge-Kutta (RK4) integration, real-time animation, and a prototype web interface for interactive tuning.',
+    image: pendulum,
+    repo: 'https://github.com/preespp/Pendulum_Control',
+    demo: 'https://preespp.github.io/all-projects/src/inverted_pendulum/index.html',
+  },
+];
+
+const projects2 = [
+  {
+    id: 'project-5',
     name: 'ALICE: AI Life Improvement & Care Expert (MakeMIT x Harvard 2026) ',
     description: 'A local-first AI smart pill dispenser designed to help people manage multiple medications safely at home. '+
     'ALICE combines face recognition, guided dispensing, and contextual health support in a more private and practical home-care device.'+
@@ -391,25 +418,6 @@ const projects = [
     image: alice,
     repo: 'https://github.com/preespp/MakeMIT_2026_Team7',
     demo: 'https://devpost.com/software/smart-ai-medical-home-device-something?_gl=1*ljrr9p*_gcl_au*MTgwMzIwMjMwMS4xNzcxNzE5NzY3*_ga*MTUwNzk4MzYzNS4xNzcxNzE5NzY3*_ga_0YHJK3Y10M*czE3NzQ5MjU5NDQkbzkkZzEkdDE3NzQ5MjU5NjAkajQ0JGwwJGgw',
-  },
-  {
-    id: 'project-4',
-    name: 'Robotics Arm Manipulation System (NCRC 2026 at Harvard University)',
-    description: 'An open-source low-cost robotic manipulation platform that combines real-time object detection, multi-camera perception, and 6-DOF arm control. This work led to a paper accepted to the National Collegiate Research Conference (NCRC) 2026 at Harvard University.',
-    image: ncrc,
-    repo: 'https://github.com/preespp/augment-robot-arm-yolo-vla',
-    demo: 'https://www.youtube.com/watch?v=-n9ZhXqO-Go',
-  },
-];
-
-const projects2 = [
-  {
-    id: 'project-5',
-    name: 'Desktop Application for small business retail',
-    description: 'An inventory management tool (Desktop Application) aimed to assist small retail businesses powered by Nodejs, Electronjs, Python, HTML/CSS, JavaScript, Mongodb',
-    image: inventory,
-    repo: 'https://github.com/preespp/Inventory_Optimizer',
-    demo: 'https://www.youtube.com/watch?v=NPsZ9VrNPgQ',
   },
   {
     id: 'project-6',
@@ -432,13 +440,13 @@ const projects2 = [
   },
   {
     id: 'project-8',
-    name: 'Whack-a-Mole on FPGA',
-    description: `Game Development on FPGA with Verilog HDL, integrating timer and external tools such as VGA, keyboard and mouse on Digital Logic Design concepts`,
-    image: fpga,
-    repo: 'https://github.com/preespp/EC311-Logic-Design-Final-Project',
-    demo: 'https://youtu.be/xJwtOaYMmew?si=ZioFx-ER5Zgv4R0E',
+    name: '2-Wheel Line Follower Robot (ROS2)',
+    description:
+      'A two-wheel robot on a Libre single-board computer built for my robotics class: ROS2 nodes and topics in Python for camera image processing, a custom dashboard, motor configuration, a kinematics model, and PID tuning — integrated into a complete line-following robot.',
+    image: linefollower,
+    demo: 'https://preespp.github.io/all-projects/src/line_follower_robot/index.html',
   },
 
 ];
 
-export { services, technologies, experiences, educations, projects, projects2, courseworks, certificate };
+export { services, technologies, experiences, educations, projects, projects2, certificate };

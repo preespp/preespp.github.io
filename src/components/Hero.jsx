@@ -36,14 +36,12 @@ const Hero = () => {
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
-                Pree S.
+                Pree
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Computer Engineer <br className="sm:block hidden" />
               Mechanical Engineer <br className="sm:block hidden" />
-              Robotics & AI <br className="sm:block hidden" />
-              Embedded Systems <br className="sm:block hidden" />
+              Computer Engineer <br className="sm:block hidden" />
             </p>
           </div>
           <div

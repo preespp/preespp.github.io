@@ -74,8 +74,8 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-      <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>Real-world application</p>
+      <motion.div variants={textVariant()} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.5 }}>
+        <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>Real-world application</p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
           Work Experience
         </h2>
